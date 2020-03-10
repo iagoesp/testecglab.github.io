@@ -1,0 +1,282 @@
+ 	
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'><html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en' lang='en'>	<head>
+		<title>CGL @ ETHZ - Seminar 'Advanced Topics in Computer Graphics and Vision' - AS 18</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	    <meta charset="UTF-8"/>
+	    <meta name="description" content=""/>
+	    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+	    <link href="/css/bootstrap.min.css" rel="stylesheet"/>
+	    <link href="/css/offcanvas.css" rel="stylesheet"/>
+	    <link href="/css/custom2014.css" rel="stylesheet"/>
+	</head>
+	
+<!-- Side menu page -->
+<body class="Seminar 'Advanced Topics in Computer Graphics and Vision' - AS 18">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-53220520-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<!--   new code   -->
+<div class="container headerBar">
+	<div class="col-lg-6 col-md-6 col-xs-6 headerBarA">
+		<h1><a href="/"><span>Computer Graphics Laboratory ETH Zurich</span></a>
+	</h1>
+	</div>
+	<div class="col-lg-6 col-md-6 col-xs-6 headerBarB">
+		<a href="http://www.ethz.ch"><span>ETH</span></a>
+	</div>
+</div>
+<div class="container navbar navbar-inverse menuBar" role="navigation">
+<!--  menu -->
+	<div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href='/aboutus/' class='list-group-item'>Contact</a></li><li><a href='/people/' class='list-group-item'>People</a></li><li><a href='/research/' class='list-group-item'>Research</a></li><li><a href='/teaching/' class='list-group-item active'>Teaching</a></li><li><a href='/publications/' class='list-group-item'>Publications</a></li><li><a href='/events/' class='list-group-item'>Events</a></li><li><a href='/industrypartners/' class='list-group-item'>Industry Partners</a></li><li><a href='/internal/' class='list-group-item'>Internal</a></li>                </ul>
+            </div>
+    </div>
+<!--  end menu -->
+</div>
+<div class="container contentWrapper">
+	<div class="row navTools">
+		<!-- breadcrumb -->	
+		<div class="col-lg-8 col-sm-8 col-xs-12 breadCrumb">
+			<!--<a href='http://www.ethz.ch'>ETH Zurich</a> &raquo; <a href='http://www.inf.ethz.ch/'>D-INFK</a> &raquo; <a href='http://ivc.ethz.ch/'>IVC</a> &raquo;--> <a href='/'>CGL</a>  &raquo; <a href='/teaching/'>Teaching</a> &raquo; <a href='/teaching/seminarAS18/'>Seminar Adv. Topics</a>		</div>
+		<!-- end breadcrumb -->	
+		<!-- search -->	
+		<div class="col-lg-4 col-sm-4 col-xs-12 searchEngine">
+			
+
+	<form method="get" action="/content/search.php" name="search">
+			<input type="text" size='17' name='q' value="Search" onclick="if(this.value=='Search'){this.value=''}" onblur="if(this.value==''){this.value='Search'}" />
+		</form>
+
+			</div>
+		<!-- end search -->	
+	</div>
+	<!-- content -->
+	<!-- <div class="row"> Marcel removed this -->
+		<div class="row row-offcanvas row-offcanvas-left">
+			<!--  side menu -->
+			<div class="col-xs-6 col-sm-3 sidebar-offcanvas noLeftPadding" id="sidebar" role="navigation">
+				<div class="list-group sideMenu">
+					<a href='/teaching/studentprojects/' class='list-group-item'>Student Projects</a><a href='/teaching/overview.php' class='list-group-item'>Courses Overview</a><a href='/teaching/gamelab19/' class='list-group-item'>Game Lab</a><a href='/teaching/mathfound19/' class='list-group-item'>Math.Foundations</a><a href='/teaching/seminarSS19/' class='list-group-item'>Seminar Adv. Methods</a><a href='/teaching/phdseminarSS19/' class='list-group-item'>PhD Seminar</a><a href='/teaching/seminarAS18/' class='list-group-item active'>Seminar Adv. Topics</a><a href='/teaching/former/' class='list-group-item'>Former Courses</a>				</div>
+			</div>
+			<!--  end side menu -->
+			<div class="col-xs-12 col-sm-9">
+				<p class="pull-left visible-xs">
+					<button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+				</p>
+				<h2 class="pageTitle">Seminar 'Advanced Topics in Computer Graphics and Vision' - AS 18</h2>
+				<!-- CONTENT STARTS HERE -->
+					
+<div class="pageContent">
+			<!--
+	<h3>Overview</h3>
+	<p class="content">
+	</p>
+	-->
+
+	<h3>Course Topics</h3>
+	<p class="content">
+   This seminar covers advanced topics in visual computing, including
+both seminal research papers as well as the latest research results.
+Topics include data-driven modeling and animation, image based
+rendering, real-time vision &amp; graphics, physical simulation and
+generative models, visual perception, computational photography, video
+synthesis, and others.
+	</p>
+
+
+	<h3>Course Setup</h3>
+	Every participant has to present one of the papers presented in the first session. Additionally, you are required to read the paper that is presented in class beforehand and
+	participate in a discussion during the seminar. An assistant will provide support when preparing the slides and in case technical questions arise.
+	
+	<h4>Important remarks</h4>
+	<p class="content">
+		 <ul>
+		  <li>Participants who registered to the course and selected a paper have to present their paper during the semester. In addition each participant has to attend  all presentations (3 misses allowed). <br><b>In case these requirements are not met, the course is not passed (fail score).</b></li>
+		  <li>Participants are only allowed to unregister the course before they have chosen a paper to present.</li>
+		  <li>Participants who are not registered to the course (e.g. because there are no more free slots), are welcome to attend the first session to fill empty slots.</li>
+		  <li>It is not allowed to use the original slides from the author (please prepare the slides to fit an aspect ratio of 16:10).</li>
+		</ul> 
+  	</p>
+	<h3>Learning Objectives</h3>
+		<p class="content">
+			The goal is to get an in-depth understanding of actual problems and research topics
+			in the field of visual computing as well as improve presentations and
+			critical analysis skills.
+		</p>
+
+		<h3>Prerequisites</h3>
+		<p class="content">
+			The "Visual Computing", "Introduction to Computer Graphics" and "Computer Vision I"
+			courses are recommended, but not mandatory.
+		</p>
+
+
+
+	<h3>Administration</h3>
+
+	<div class="content">
+		<table class="genericTable" <tr="">  <tbody><tr><td class="content" valign="top">    <strong>Number</strong>  </td>  <td class="content" valign="top">    <a href="http://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheitPre.do?lerneinheitId=116186&semkez=2017W&lang=en">252-5701-00L </a>  </td></tr><tr>  <td class="content" valign="top">    <strong>Lecturers</strong>  </td>  <td class="content" valign="top">    <a href="http://graphics.ethz.ch/people/grossm/">Prof. Dr. Markus Gross</a>, <a href="http://www.inf.ethz.ch/personal/marc.pollefeys/">Prof. Dr. Marc Pollefeys</a>, <a href="http://igl.ethz.ch/people/sorkine/">Prof. Dr. Olga Sorkine-Hornung</a>  </td></tr><tr>  <td class="content" valign="top">    <strong>Assistants</strong>  </td>  <td class="content" valign="top">  <a href="http://www.inf.ethz.ch/personal/ladickyl/">Lubor Ladicky</a>, <a href="https://adjelouah.github.io/">Aziz Djelouah </a>, <a href="http://shihaowu.net/">Shihao Wu</a>   </td></tr><tr>  <td class="content" valign="top">    <strong>Location</strong>  </td>  <td class="content" valign="top">    <a href="http://www.mapsearch.ethz.ch/map/mapSearchPre.do?farbcode=c010&amp;lang=de&amp;raumMap=56&amp;gebaeudeMap=HG&amp;geschossMap=E">HG</a> <a href="http://www.rauminfo.ethz.ch/Rauminfo/grundrissplan.gif?gebaeude=HG&amp;geschoss=E&amp;raumNr=33.3&amp;lang=en">E 33.3</a>, Thursday, 15-17  </td></tr><tr>  <td class="content" valign="top">    <strong>ECTS Credits</strong>  </td>  <td class="content" valign="top">    2 credits  </td></tr><tr>  <td class="content" valign="top">    <strong>Exam</strong>  </td>  <td class="content" valign="top">    graded semester performance  </td></tr></tbody></table>
+	</div>
+
+
+	<h3>Schedule</h3>
+	<p class="content">
+		</p><table class="genericTable">
+			<tbody><tr class="header">
+				<td width="75">Date</td>
+				<td>Name</td>
+				<td>Topic</td>
+				<td>Supervisor</td>
+			</tr>
+			<tr>
+				<td>Sept 20</td>
+				<td></td>
+				<td>
+				    Introduction and paper assignments
+				</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Sept 27</td>
+				<td></td>
+				<td>
+				    Example Talk
+				</td>
+				<td></td>
+			</tr>
+			<!--
+			<tr>
+                <td>Nov 10</td>
+                <td><a href="mailto:nubertj@student.ethz.ch">Julian Nubert</a></td>
+                <td>Super SloMo: High Quality Estimation of Multiple Intermediate Frames for Video Interpolation</td>
+                <td><a href="mailto:simone.a.meyer@gmail.com">Simone Meyer</a></td>
+            </tr>
+			-->
+			<tr>
+                <td>Oct 11</td>
+                <td><a href="mailto:nubertj@student.ethz.ch">Julian Nubert</a></td>
+                <td>Super SloMo: High Quality Estimation of Multiple Intermediate Frames for Video Interpolation</td>
+                <td><a href="mailto:simone.a.meyer@gmail.com">Simone Meyer</a></td>
+            </tr>
+			<tr>
+                <td>Oct 11</td>
+                <td><a href="mailto:woonmi@student.ethz.ch">Michelle Won</a></td>
+                <td>CurveUps: Shaping Objects from Flat Plates with Tension-Actuated Curvature</td>
+                <td><a href="mailto:chschuma@inf.ethz.ch">Christian Schumacher</a></td>
+            </tr>
+			<tr>
+                <td>Oct 18</td>
+                <td><a href="mailto:acavaler@student.ethz.ch">Alexandre Cavaleri</a></td>
+                <td>Deep Exemplar-based Colorization</td>
+                <td><a href="mailto:aziz.djelouah@disneyresearch.com">Aziz Djelouah</a></td>
+            </tr>
+			<tr>
+                <td>Oct 18</td>
+                <td><a href="mailto:zvarad@student.ethz.ch">Daniel Zvara</a></td>
+                <td>CodeSLAM — Learning a Compact, Optimisable Representation for Dense Visual SLAM</td>
+                <td><a href="mailto:peidong.liu@inf.ethz.ch">Peidong Liu</a></td>
+            </tr>
+			<tr>
+                <td>Oct 25</td>
+                <td><a href="mailto:woernest@student.ethz.ch">Stefano Woerner</a></td>
+                <td>Convolutional Networks with Adaptive Computation Graphs</td>
+                <td><a href="mailto:simone.a.meyer@gmail.com">Simone Meyer</a></td>
+            </tr>
+			<tr>
+                <td>Oct 25</td>
+                <td><a href="mailto:bberabi@student.ethz.ch">Berkay Berabi</a></td>
+                <td>Learning Three-Dimensional Flow for Interactive Aerodynamic Design</td>
+                <td><a href="mailto:kimby@inf.ethz.ch">Byungsoo Kim</a></td>
+            </tr>
+			<tr>
+                <td>Nov 1</td>
+                <td><a href="mailto:hghazal@student.ethz.ch">Ghazal Hakimifard</a></td>
+                <td>A Computational Design Tool for Compliant Mechanisms</td>
+                <td><a href="mailto:Alexandra.Ion@hpi.de">Alexandra Ion</a></td>
+            </tr>
+			<tr>
+                <td>Nov 1</td>
+                <td><a href="mailto:ruschl@student.ethz.ch">Lukas Rusch</a></td>
+                <td>Semantic Soft Segmentation</td>
+                <td><a href="mailto:yaksoy@inf.ethz.ch">Yagiz Aksoy</a></td>
+            </tr>
+			<tr>
+                <td>Nov 8</td>
+                <td><a href="mailto:zhengyuf@student.ethz.ch">Yufeng Zheng</a></td>
+                <td>Burst Image Deblurring Using Permutation Invariant Convolutional Neural Networks</td>
+                <td><a href="mailto:martin.oswald@inf.ethz.ch">Martin Oswald</a></td>
+            </tr>
+			<tr>
+                <td>Nov 8</td>
+                <td><a href="mailto:tmiriam@student.ethz.ch">Miriam Tschanen</a></td>
+                <td>tempoGAN: A Temporally Coherent, Volumetric GAN for Super-resolution Fluid Flow</td>
+                <td><a href="mailto:kimby@inf.ethz.ch">Byungsoo Kim</a></td>
+            </tr>
+			<tr>
+                <td>Nov 15</td>
+                <td><a href="mailto:nhuart@student.ethz.ch">Nikolas Huart</a></td>
+                <td>Stylized Image Triangulation</td>
+                <td><a href="mailto:tobias.guenther@inf.ethz.ch">Tobias Günther</a></td>
+            </tr>
+			<tr>
+                <td>Nov 15</td>
+                <td><a href="mailto:jsara@student.ethz.ch">Javadzadeh No Sara</a></td>
+                <td><a href="https://arxiv.org/pdf/1706.02413.pdf">PointNet++: Deep Hierarchical Feature Learning on Point Sets in a Metric Space<a/></td>
+                <td><a href="mailto:yifan.wang@inf.ethz.ch">Yifan Wang</a></td>
+            </tr>
+		</tbody></table>
+	<p></p>
+
+	<h3>Seminar Papers</h3>
+
+	<p class="content"></p>
+    <ul>
+
+    </ul>
+</div>
+
+				<!-- CONTENT ENDS HERE -->
+			</div>
+			<!-- end content -->
+		</div>
+	<!-- </div> Marcel removed this -->
+</div>
+<!-- footer -->
+<div class="container wrapperCloser">
+	<div class="grey"><br></div>
+	<div class="red"><br></div>
+	<div class="green"><br></div>
+	<div class="blue"><br></div>
+</div>
+<div class="container footer">
+		<div class='col-xl-6 col-lg-6 col-sm-6 col-xs-12 footerA'>&copy; CGL, ETH Zurich</div>
+	<!--<div class='col-xl-6 col-lg-6 col-sm-6 col-xs-12 footerB'>wwwgraph<img src='/images2014/at.png' alt='o'/>inf.ethz.ch</div>-->
+	</div>
+<!-- end footer -->
+<!--   end new code   -->
+
+
+<!-- old stuff
+end old stuff  -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/offcanvas.js"></script>
+</body>
+</html>

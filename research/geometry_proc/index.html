@@ -1,0 +1,519 @@
+ 	
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'><html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en' lang='en'>	<head>
+		<title>CGL @ ETHZ - Geometry Processing</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	    <meta charset="UTF-8"/>
+	    <meta name="description" content=""/>
+	    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+	    <link href="/css/bootstrap.min.css" rel="stylesheet"/>
+	    <link href="/css/offcanvas.css" rel="stylesheet"/>
+	    <link href="/css/custom2014.css" rel="stylesheet"/>
+	</head>
+	
+<!-- Side menu page -->
+<body class="Geometry Processing">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-53220520-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<!--   new code   -->
+<div class="container headerBar">
+	<div class="col-lg-6 col-md-6 col-xs-6 headerBarA">
+		<h1><a href="/"><span>Computer Graphics Laboratory ETH Zurich</span></a>
+	</h1>
+	</div>
+	<div class="col-lg-6 col-md-6 col-xs-6 headerBarB">
+		<a href="http://www.ethz.ch"><span>ETH</span></a>
+	</div>
+</div>
+<div class="container navbar navbar-inverse menuBar" role="navigation">
+<!--  menu -->
+	<div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href='/aboutus/' class='list-group-item'>Contact</a></li><li><a href='/people/' class='list-group-item'>People</a></li><li><a href='/research/' class='list-group-item active'>Research</a></li><li><a href='/teaching/' class='list-group-item'>Teaching</a></li><li><a href='/publications/' class='list-group-item'>Publications</a></li><li><a href='/events/' class='list-group-item'>Events</a></li><li><a href='/industrypartners/' class='list-group-item'>Industry Partners</a></li><li><a href='/internal/' class='list-group-item'>Internal</a></li>                </ul>
+            </div>
+    </div>
+<!--  end menu -->
+</div>
+<div class="container contentWrapper">
+	<div class="row navTools">
+		<!-- breadcrumb -->	
+		<div class="col-lg-8 col-sm-8 col-xs-12 breadCrumb">
+			<!--<a href='http://www.ethz.ch'>ETH Zurich</a> &raquo; <a href='http://www.inf.ethz.ch/'>D-INFK</a> &raquo; <a href='http://ivc.ethz.ch/'>IVC</a> &raquo;--> <a href='/'>CGL</a>  &raquo; <a href='/research/'>Research</a> &raquo; <a href='/research/geometry_proc/'>Geometry Processing</a>		</div>
+		<!-- end breadcrumb -->	
+		<!-- search -->	
+		<div class="col-lg-4 col-sm-4 col-xs-12 searchEngine">
+			
+
+	<form method="get" action="/content/search.php" name="search">
+			<input type="text" size='17' name='q' value="Search" onclick="if(this.value=='Search'){this.value=''}" onblur="if(this.value==''){this.value='Search'}" />
+		</form>
+
+			</div>
+		<!-- end search -->	
+	</div>
+	<!-- content -->
+	<!-- <div class="row"> Marcel removed this -->
+		<div class="row row-offcanvas row-offcanvas-left">
+			<!--  side menu -->
+			<div class="col-xs-6 col-sm-3 sidebar-offcanvas noLeftPadding" id="sidebar" role="navigation">
+				<div class="list-group sideMenu">
+					<a href='/research/animation/' class='list-group-item'>Animation</a><a href='/research/ar_games/' class='list-group-item'>AR and Games</a><a href='/research/data_analytics/' class='list-group-item'>AI and Analytics</a><a href='/research/digital_humans/' class='list-group-item'>Digital Humans</a><a href='/research/geometry_proc/' class='list-group-item active'>Geometry Processing</a><a href='/research/image_video/' class='list-group-item'>Image and Video</a><a href='/research/materials/' class='list-group-item'>Materials</a><a href='/research/physics_simulation/' class='list-group-item'>Physics Simulation</a><a href='/research/rendering/' class='list-group-item'>Rendering</a><a href='/research/telepresence/' class='list-group-item'>Telepresence</a><a href='/research/visualization/' class='list-group-item'>Visualization</a><a href='/research/past_projects/' class='list-group-item'>Project Archive</a>				</div>
+			</div>
+			<!--  end side menu -->
+			<div class="col-xs-12 col-sm-9">
+				<p class="pull-left visible-xs">
+					<button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+				</p>
+				<h2 class="pageTitle">Geometry Processing</h2>
+				<!-- CONTENT STARTS HERE -->
+				
+<div class="singleProject">
+
+	<h3>Introduction</h3>
+		<p class="content" align="justify">
+		We are living in the age of large data. Vast amounts of data is collected form the real-world by various sensors or simulated to produce images, videos, depth images, volume images, 3D geometry, and other forms representing the geometric structure of the world. Our main goal in this project is to develop novel mathematical and computational techniques and tools that can analyze, reconstruct, and process general complex geometric structures represented by acquired or simulated data.	
+		</p>
+		
+	<h3>Topics</h3>	
+		<p class="content"><b>Point-sampled Geometry</b></p>
+		<p class="content" align="justify">
+		In the last decades, many algorithms that can process geometric data have been proposed in the point-based computer graphics literature.  Most of these methods work under the assumption that the data resides on a smooth manifold. However, as the data becomes more accessible, it also gets more complex. This renders the current assumptions invalid. To deal with complex data, it is essential to drop the common smoothness and manifoldness assumptions and develop a more general framework for non-manifold data.
+		</p>
+		<p class="content" align="center">
+			<img src="images/geoproc1.png" class="img-responsive" align="center" alt=""/>
+		</p>
+		<br />
+		
+		<p class="content"><b>Body Shape Reconstruction</b></p>
+		<p class="content" align="justify">
+		The goal is to investigate novel methods in geometry synthesis and texture synthesis to tackle the problem of reconstructing a body shape. Data-driven approaches based on body poses and silhouettes are used to complete human shapes and textures, in order to plausibly regenerate hidden parts of the scene with desired resolution. 			
+		</p>
+		
+		<p class="content"><b>Image and Video Processing</b></p>
+		<p class="content" align="justify">
+		Images and videos are everywhere and represent a huge amount of visual data. Our goal is to develop geometry-based image and video processing methods, in order to understand and utilize them.		
+		</p>
+		<p class="content" align="center">
+			<img src="images/geoproc3.png" class="img-responsive" align="center" alt=""/>
+		</p>
+		<br />
+	
+	<h3>Publications</h3>
+	<ul><div class='pageContent publications'><h3><a name='2018'></a>2018</h3><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperRov18b.php'><b>Rov18b</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2018/Rov18b/Rov18b_1.png'>
+			<img src='/Downloads/Publications/Papers/2018/Rov18b/Rov18b_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Rov18b'></a>
+		<i>R. Roveri, L. Rahmann, A. C. &Ouml;ztireli, M. Gross</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperRov18b.php'><b>A Network Architecture for Point Cloud Classification via Automatic Depth Images Generation</b></a>		<br/>
+		To appear: Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR) (Salt Lake City, USA, June 18-22, 2018) 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2018/Rov18b/Rov18b.pdf'>PDF</a>][<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2018/Rov18b/Rov18b_supp.pdf'>PDF suppl.</a>] [<a href='/Downloads/Publications/PaperVideos/2018/Rov18b.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2018/Rov18b/Rov18b.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2018/Rov18b/Rov18b.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperDib18a.php'><b>Dib18a</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2018/Dib18a/Dib18a_1.png'>
+			<img src='/Downloads/Publications/Papers/2018/Dib18a/Dib18a_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Dib18a'></a>
+		<i>E. Dibra, S. Melchior, A. Balkis, T. Wolf, C. &Ouml;ztireli, M. Gross</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperDib18a.php'><b>Monocular RGB Hand Pose Inference from Unsupervised Refinable Nets</b></a>		<br/>
+		To appear: IEEE Conference on Computer Vision and Pattern Recognition (CVPR) Workshops (3D Humans 2018) (Salt Lake City, USA, June 18-22, 2018) 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2018/Dib18a/Dib18a.pdf'>PDF</a>][<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2018/Dib18a/Dib18a_supp.pdf'>PDF suppl.</a>] [<a href='/Downloads/Publications/PaperVideos/2018/Dib18a.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2018/Dib18a/Dib18a.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2018/Dib18a/Dib18a.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperRov18a.php'><b>Rov18a</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2018/Rov18a/Rov18a_1.png'>
+			<img src='/Downloads/Publications/Papers/2018/Rov18a/Rov18a_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Rov18a'></a>
+		<i>R. Roveri, A. C. &Ouml;ztireli, I. Pandele, M. Gross</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperRov18a.php'><b>PointProNets: Consolidation of Point Clouds with Convolutional Neural Networks</b></a>		<br/>
+		To appear: Proceedings of Eurographics (Delft, The Netherlands, April 16-20, 2018), Computer Graphics Forum, vol. 37, no. 2 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2018/Rov18a/Rov18a.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2018/Rov18a.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2018/Rov18a/Rov18a.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2018/Rov18a/Rov18a.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><h3><a name='2017'></a>2017</h3><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperDib17c.php'><b>Dib17c</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2017/Dib17c/Dib17c_1.png'>
+			<img src='/Downloads/Publications/Papers/2017/Dib17c/Dib17c_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Dib17c'></a>
+		<i>E. Dibra, T. Wolf, C. &Ouml;ztireli, M. Gross</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperDib17c.php'><b>How to Refine 3D Hand Pose Estimation from Unlabelled Depth Data ?</b></a>		<br/>
+		Proceedings of the Fifth International Conference on 3D Vision, 3DV (Qingdao, China, October 10-12, 2017), pp. 135-144 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2017/Dib17c/Dib17c.pdf'>PDF</a>][<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2017/Dib17c/Dib17c_supp.pdf'>PDF suppl.</a>] [<a href='/Downloads/Publications/PaperVideos/2017/Dib17c.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2017/Dib17c/Dib17c.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2017/Dib17c/Dib17c.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperDib17b.php'><b>Dib17b</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2017/Dib17b/Dib17b_1.png'>
+			<img src='/Downloads/Publications/Papers/2017/Dib17b/Dib17b_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Dib17b'></a>
+		<i>E. Dibra, H. Jain, C. &Ouml;ztireli, R. Ziegler, M. Gross</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperDib17b.php'><b>Human Shape from Silhouettes using Generative HKS Descriptors and Cross-Modal Neural Networks</b></a>		<br/>
+		Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR) (Honolulu, HI, USA, July 21-26, 2017), pp. - 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2017/Dib17b/Dib17b.pdf'>PDF</a>][<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2017/Dib17b/Dib17b_supp.pdf'>PDF suppl.</a>]		[<a href='/Downloads/Publications/Papers/2017/Dib17b/Dib17b.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2017/Dib17b/Dib17b.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperDib17a.php'><b>Dib17a</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2017/Dib17a/Dib17a_1.png'>
+			<img src='/Downloads/Publications/Papers/2017/Dib17a/Dib17a_1_thmb.png' height='40' border='0' alt=''/></a>
+		<a href='/Downloads/Publications/Papers/2017/Dib17a/Dib17a_2.png'>
+			<img src='/Downloads/Publications/Papers/2017/Dib17a/Dib17a_2_thmb.png' height='40' border='0' alt=''/></a>
+		<a href='/Downloads/Publications/Papers/2017/Dib17a/Dib17a_3.png'>
+			<img src='/Downloads/Publications/Papers/2017/Dib17a/Dib17a_3_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Dib17a'></a>
+		<i>R. Danecek*, E. Dibra*, A. C. &Ouml;ztireli, R. Ziegler, M. Gross</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperDib17a.php'><b>DeepGarment : 3D Garment Shape Estimation from a Single Image</b></a>		<br/>
+		Proceedings of Eurographics (Lyon, France, April 24-28, 2017), Computer Graphics Forum, vol. 36, no. 2, pp. 269-280 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2017/Dib17a/Dib17a.pdf'>PDF</a>][<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2017/Dib17a/Dib17a_supp.pdf'>PDF suppl.</a>]		[<a href='/Downloads/Publications/Papers/2017/Dib17a/Dib17a.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2017/Dib17a/Dib17a.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperRov17a.php'><b>Rov17a</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2017/Rov17a/Rov17a_1.png'>
+			<img src='/Downloads/Publications/Papers/2017/Rov17a/Rov17a_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Rov17a'></a>
+		<i>R. Roveri, A. C. &Ouml;ztireli, M. Gross</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperRov17a.php'><b>General Point Sampling with Adaptive Density and Correlations</b></a>		<br/>
+		Proceedings of Eurographics (Lyon, France, April 24-28, 2017), Computer Graphics Forum, vol. 36, no. 2, pp. 107-117 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2017/Rov17a/Rov17a.pdf'>PDF</a>][<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2017/Rov17a/Rov17a_supp.pdf'>PDF suppl.</a>] [<a href='/Downloads/Publications/PaperVideos/2017/Rov17a.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2017/Rov17a/Rov17a.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2017/Rov17a/Rov17a.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><h3><a name='2016'></a>2016</h3><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperOzt16b.php'><b>Ozt16b</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2016/Ozt16b/Ozt16b_1.png'>
+			<img src='/Downloads/Publications/Papers/2016/Ozt16b/Ozt16b_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Ozt16b'></a>
+		<i>A. C. Oztireli</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperOzt16b.php'><b>Integration with Stochastic Point Processes</b></a>		<br/>
+		 (New York, NY, USA, August, 2016), ACM Transactions on Graphics, vol. 35, no. 5, 2016, pp. 160:1--160:16 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2016/Ozt16b/Ozt16b.pdf'>PDF</a>][<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2016/Ozt16b/Ozt16b_supp.pdf'>PDF suppl.</a>]		[<a href='/Downloads/Publications/Papers/2016/Ozt16b/Ozt16b.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2016/Ozt16b/Ozt16b.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperDib16b.php'><b>Dib16b</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2016/Dib16b/Dib16b_1.png'>
+			<img src='/Downloads/Publications/Papers/2016/Dib16b/Dib16b_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Dib16b'></a>
+		<i>E. Dibra, H. Jain, C. &Ouml;ztireli, R. Ziegler, M. Gross</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperDib16b.php'><b>HS-Nets: Estimating Human Body Shape from Silhouettes with Convolutional Neural Networks</b></a>		<br/>
+		Proceedings of the Fourth International Conference on 3D Vision, 3DV (Stanford, CA, USA, October 25-28, 2016), pp. 108-117 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2016/Dib16b/Dib16b.pdf'>PDF</a>][<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2016/Dib16b/Dib16b_supp.pdf'>PDF suppl.</a>]		[<a href='/Downloads/Publications/Papers/2016/Dib16b/Dib16b.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2016/Dib16b/Dib16b.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperDib16a.php'><b>Dib16a</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2016/Dib16a/Dib16a_1.png'>
+			<img src='/Downloads/Publications/Papers/2016/Dib16a/Dib16a_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Dib16a'></a>
+		<i>E. Dibra, C. &Ouml;ztireli, R. Ziegler, M. Gross</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperDib16a.php'><b>Shape from Selfies : Human Body Shape Estimation using CCA Regression Forests</b></a>		<br/>
+		Proceedings of Computer Vision - (ECCV) - 14th European Conference (Amsterdam, the Netherlands, October 8-16, 2016), pp. 88-104 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2016/Dib16a/Dib16a.pdf'>PDF</a>][<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2016/Dib16a/Dib16a_supp.pdf'>PDF suppl.</a>] [<a href='/Downloads/Publications/PaperVideos/2016/Dib16a.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2016/Dib16a/Dib16a.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2016/Dib16a/Dib16a.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperCic16a.php'><b>Cic16a</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2016/Cic16a/Cic16a_1.png'>
+			<img src='/Downloads/Publications/Papers/2016/Cic16a/Cic16a_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Cic16a'></a>
+		<i>L. Ciccone, M. Guay, R. Sumner</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperCic16a.php'><b>Flow Curves: an Intuitive Interface for Coherent Scene Deformation</b></a>		<br/>
+		Pacific Graphics 2016, Computer Graphics Forum (Okinawa, Japan, October 11-14, 2016), pp. 247--256 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2016/Cic16a/Cic16a.pdf'>PDF</a>][<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2016/Cic16a/Cic16a_supp.pdf'>PDF suppl.</a>] [<a href='/Downloads/Publications/PaperVideos/2016/Cic16a.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2016/Cic16a/Cic16a.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2016/Cic16a/Cic16a.abstract'>Abstract</a>]
+ [<a href='https://www.youtube.com/watch?v=VxbK4-rJ2og' target='_blank'>YouTube</a>]</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperOzt16a.php'><b>Ozt16a</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2016/Ozt16a/Ozt16a_1.png'>
+			<img src='/Downloads/Publications/Papers/2016/Ozt16a/Ozt16a_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Ozt16a'></a>
+		<i>Y. J. Yoon, A. Lelidis, A. C. Oztireli, J. M. Hwang, M. Gross, S. M. Choi</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperOzt16a.php'><b>Geometry Representations with Unsupervised Feature Learning </b></a>		<br/>
+		Proceedings of 2016 International Conference on Big Data and Smart Computing (BigComp) (Hong Kong, China, January 8-10, 2016), pp. 18-20 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2016/Ozt16a/Ozt16a.pdf'>PDF</a>]		[<a href='/Downloads/Publications/Papers/2016/Ozt16a/Ozt16a.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2016/Ozt16a/Ozt16a.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><h3><a name='2015'></a>2015</h3><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperOzt15c.php'><b>Ozt15c</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2015/Ozt15c/Ozt15c_1.png'>
+			<img src='/Downloads/Publications/Papers/2015/Ozt15c/Ozt15c_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Ozt15c'></a>
+		<i>A. C. Oztireli</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperOzt15c.php'><b>Making Sense of Geometric Data</b></a>		<br/>
+		Computer Graphics and Applications, IEEE, vol. 35, no. 4, 2015, pp. 100-106 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2015/Ozt15c/Ozt15c.pdf'>PDF</a>]		[<a href='/Downloads/Publications/Papers/2015/Ozt15c/Ozt15c.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2015/Ozt15c/Ozt15c.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperOzt15b.php'><b>Ozt15b</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2015/Ozt15b/Ozt15b_1.png'>
+			<img src='/Downloads/Publications/Papers/2015/Ozt15b/Ozt15b_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Ozt15b'></a>
+		<i>A. C. Oztireli, M. Gross</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperOzt15b.php'><b>Perceptually Based Downscaling of Images</b></a>		<br/>
+		Proceedings of ACM SIGGRAPH (Los Angeles, California, USA, August 9-13, 2015), ACM Transactions on Graphics, vol. 34, no. 4, pp. 77:1-77:10 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2015/Ozt15b/Ozt15b.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2015/Ozt15b.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2015/Ozt15b/Ozt15b.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2015/Ozt15b/Ozt15b.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperRov15a.php'><b>Rov15a</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2015/Rov15a/Rov15a_1.png'>
+			<img src='/Downloads/Publications/Papers/2015/Rov15a/Rov15a_1_thmb.png' height='40' border='0' alt=''/></a>
+		<a href='/Downloads/Publications/Papers/2015/Rov15a/Rov15a_2.png'>
+			<img src='/Downloads/Publications/Papers/2015/Rov15a/Rov15a_2_thmb.png' height='40' border='0' alt=''/></a>
+		<a href='/Downloads/Publications/Papers/2015/Rov15a/Rov15a_3.png'>
+			<img src='/Downloads/Publications/Papers/2015/Rov15a/Rov15a_3_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Rov15a'></a>
+		<i>R. Roveri, A. C. &Ouml;ztireli, S. Martin, B. Solenthaler, M. Gross</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperRov15a.php'><b>Example Based Repetitive Structure Synthesis</b></a>		<br/>
+		Proceedings of Eurographics Symposium on Geometry Processing (Graz, Austria, July 6-8, 2015), Computer Graphics Forum, vol. 34, no. 5, 2015, pp. 39--52 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2015/Rov15a/Rov15a.pdf'>PDF</a>][<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2015/Rov15a/Rov15a_supp.pdf'>PDF suppl.</a>] [<a href='/Downloads/Publications/PaperVideos/2015/Rov15a.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2015/Rov15a/Rov15a.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2015/Rov15a/Rov15a.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperOzt15a.php'><b>Ozt15a</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2015/Ozt15a/Ozt15a_1.png'>
+			<img src='/Downloads/Publications/Papers/2015/Ozt15a/Ozt15a_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Ozt15a'></a>
+		<i>H. J. Kim, A. C. Oztireli, I. K. Shin, M. Gross, S. M. Choi</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperOzt15a.php'><b>Interactive Generation of Realistic Facial Wrinkles from Sketchy Drawings</b></a>		<br/>
+		Proceedings of Eurographics (Zurich, Switzerland,, May 4-8, 2015), Computer Graphics Forum, vol. 34, no. 2, pp. 179-191 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2015/Ozt15a/Ozt15a.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2015/Ozt15a.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2015/Ozt15a/Ozt15a.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2015/Ozt15a/Ozt15a.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><h3><a name='2013'></a>2013</h3><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperOzt13.php'><b>Ozt13</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2013/Ozt13/Ozt13_1.png'>
+			<img src='/Downloads/Publications/Papers/2013/Ozt13/Ozt13_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Ozt13'></a>
+		<i>A. C. Oztireli, I. Baran, T. Popa, B. Dalstein, R. W. Sumner, M. Gross</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperOzt13.php'><b>Differential Blending for Expressive Sketch-Based Posing</b></a>		<br/>
+		Proceedings of the 2013 ACM SIGGRAPH/Eurographics Symposium on Computer Animation (Anaheim, USA, July 19-21, 2013), pp. 155-164 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2013/Ozt13/Ozt13.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2013/Ozt13-SCA2013-DifferentialBlendingForExpressiveSketchBasedPosing.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2013/Ozt13/Ozt13.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2013/Ozt13/Ozt13.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><h3><a name='2012'></a>2012</h3><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperOzt12b.php'><b>Ozt12b</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2012/Ozt12b/Ozt12b_1.png'>
+			<img src='/Downloads/Publications/Papers/2012/Ozt12b/Ozt12b_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Ozt12b'></a>
+		<i>A. C. Oztireli, M. Gross</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperOzt12b.php'><b>Analysis and Synthesis of Point Distributions based on Pair Correlation</b></a>		<br/>
+		Proceedings of ACM SIGGRAPH Asia (Singapore, November 28 - December 1, 2012), ACM Transactions on Graphics, vol. 31, no. 6, pp. 170:1-170:10 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2012/Ozt12b/Ozt12b.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2012/Ozt12b-SiggraphAsia2012-AnalysisAndSynthesisOfPointDistributionsBasedOnPairCorrelation.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2012/Ozt12b/Ozt12b.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2012/Ozt12b/Ozt12b.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperOzt12a.php'><b>Ozt12a</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2012/Ozt12a/Ozt12a_1.png'>
+			<img src='/Downloads/Publications/Papers/2012/Ozt12a/Ozt12a_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Ozt12a'></a>
+		<i>H. Kim, A. C. Oztireli, M. Gross, S. Choi</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperOzt12a.php'><b>Adaptive surface splatting for facial rendering</b></a>		<br/>
+		Computer Animation and Virtual Worlds, vol. 23, no. 3-4, pp. 363-373 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2012/Ozt12a/Ozt12a.pdf'>PDF</a>]		[<a href='/Downloads/Publications/Papers/2012/Ozt12a/Ozt12a.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2012/Ozt12a/Ozt12a.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><h3><a name='2011'></a>2011</h3><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperOzt11.php'><b>Ozt11</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2011/Ozt11/Ozt11_1.png'>
+			<img src='/Downloads/Publications/Papers/2011/Ozt11/Ozt11_1_thmb.png' height='40' border='0' alt=''/></a>
+		<a href='/Downloads/Publications/Papers/2011/Ozt11/Ozt11_2.png'>
+			<img src='/Downloads/Publications/Papers/2011/Ozt11/Ozt11_2_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Ozt11'></a>
+		<i>C. &Ouml;ztireli, U. Uyumaz, T. Popa, A. Sheffer, M. Gross</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperOzt11.php'><b>3D Modeling with a Symmetric Sketch</b></a>		<br/>
+		Proceedings of SBIM (Vancouver, Canada, August 5-7, 2011), pp. 23-30 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2011/Ozt11/Ozt11.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2011/Ozt11-SBIM2011-3DModelingWithASymmetricSketch.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2011/Ozt11/Ozt11.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2011/Ozt11/Ozt11.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><h3><a name='2010'></a>2010</h3><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperOzt10.php'><b>Ozt10</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2010/Ozt10/Ozt10_1.png'>
+			<img src='/Downloads/Publications/Papers/2010/Ozt10/Ozt10_1_thmb.png' height='40' border='0' alt=''/></a>
+		<a href='/Downloads/Publications/Papers/2010/Ozt10/Ozt10_2.png'>
+			<img src='/Downloads/Publications/Papers/2010/Ozt10/Ozt10_2_thmb.png' height='40' border='0' alt=''/></a>
+		<a href='/Downloads/Publications/Papers/2010/Ozt10/Ozt10_3.png'>
+			<img src='/Downloads/Publications/Papers/2010/Ozt10/Ozt10_3_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Ozt10'></a>
+		<i>C. &Ouml;ztireli, M. Alexa, M. Gross</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperOzt10.php'><b>Spectral Sampling of Manifolds</b></a>		<br/>
+		Proceedings of ACM SIGGRAPH Asia (Seoul, Korea, December 15-18, 2010), ACM Transactions on Graphics, vol. 29, no. 5, pp. 168:1-168:8 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2010/Ozt10/Ozt10.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2010/Ozt10 - SIGGRAPHASIA2010 - Spectral Sampling of Manifolds.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2010/Ozt10/Ozt10.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2010/Ozt10/Ozt10.abstract'>Abstract</a>]
+</div>
+</div></div></ul>
+</div>
+
+				<!-- CONTENT ENDS HERE -->
+			</div>
+			<!-- end content -->
+		</div>
+	<!-- </div> Marcel removed this -->
+</div>
+<!-- footer -->
+<div class="container wrapperCloser">
+	<div class="grey"><br></div>
+	<div class="red"><br></div>
+	<div class="green"><br></div>
+	<div class="blue"><br></div>
+</div>
+<div class="container footer">
+		<div class='col-xl-6 col-lg-6 col-sm-6 col-xs-12 footerA'>&copy; CGL, ETH Zurich</div>
+	<!--<div class='col-xl-6 col-lg-6 col-sm-6 col-xs-12 footerB'>wwwgraph<img src='/images2014/at.png' alt='o'/>inf.ethz.ch</div>-->
+	</div>
+<!-- end footer -->
+<!--   end new code   -->
+
+
+<!-- old stuff
+end old stuff  -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/offcanvas.js"></script>
+</body>
+</html>

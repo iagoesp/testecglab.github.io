@@ -1,0 +1,514 @@
+ 	
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'><html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en' lang='en'>	<head>
+		<title>CGL @ ETHZ - Visualization</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	    <meta charset="UTF-8"/>
+	    <meta name="description" content=""/>
+	    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+	    <link href="/css/bootstrap.min.css" rel="stylesheet"/>
+	    <link href="/css/offcanvas.css" rel="stylesheet"/>
+	    <link href="/css/custom2014.css" rel="stylesheet"/>
+	</head>
+	
+<!-- Side menu page -->
+<body class="Visualization">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-53220520-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<!--   new code   -->
+<div class="container headerBar">
+	<div class="col-lg-6 col-md-6 col-xs-6 headerBarA">
+		<h1><a href="/"><span>Computer Graphics Laboratory ETH Zurich</span></a>
+	</h1>
+	</div>
+	<div class="col-lg-6 col-md-6 col-xs-6 headerBarB">
+		<a href="http://www.ethz.ch"><span>ETH</span></a>
+	</div>
+</div>
+<div class="container navbar navbar-inverse menuBar" role="navigation">
+<!--  menu -->
+	<div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href='/aboutus/' class='list-group-item'>Contact</a></li><li><a href='/people/' class='list-group-item'>People</a></li><li><a href='/research/' class='list-group-item active'>Research</a></li><li><a href='/teaching/' class='list-group-item'>Teaching</a></li><li><a href='/publications/' class='list-group-item'>Publications</a></li><li><a href='/events/' class='list-group-item'>Events</a></li><li><a href='/industrypartners/' class='list-group-item'>Industry Partners</a></li><li><a href='/internal/' class='list-group-item'>Internal</a></li>                </ul>
+            </div>
+    </div>
+<!--  end menu -->
+</div>
+<div class="container contentWrapper">
+	<div class="row navTools">
+		<!-- breadcrumb -->	
+		<div class="col-lg-8 col-sm-8 col-xs-12 breadCrumb">
+			<!--<a href='http://www.ethz.ch'>ETH Zurich</a> &raquo; <a href='http://www.inf.ethz.ch/'>D-INFK</a> &raquo; <a href='http://ivc.ethz.ch/'>IVC</a> &raquo;--> <a href='/'>CGL</a>  &raquo; <a href='/research/'>Research</a> &raquo; <a href='/research/visualization/'>Visualization</a>		</div>
+		<!-- end breadcrumb -->	
+		<!-- search -->	
+		<div class="col-lg-4 col-sm-4 col-xs-12 searchEngine">
+			
+
+	<form method="get" action="/content/search.php" name="search">
+			<input type="text" size='17' name='q' value="Search" onclick="if(this.value=='Search'){this.value=''}" onblur="if(this.value==''){this.value='Search'}" />
+		</form>
+
+			</div>
+		<!-- end search -->	
+	</div>
+	<!-- content -->
+	<!-- <div class="row"> Marcel removed this -->
+		<div class="row row-offcanvas row-offcanvas-left">
+			<!--  side menu -->
+			<div class="col-xs-6 col-sm-3 sidebar-offcanvas noLeftPadding" id="sidebar" role="navigation">
+				<div class="list-group sideMenu">
+					<a href='/research/animation/' class='list-group-item'>Animation</a><a href='/research/ar_games/' class='list-group-item'>AR and Games</a><a href='/research/data_analytics/' class='list-group-item'>AI and Analytics</a><a href='/research/digital_humans/' class='list-group-item'>Digital Humans</a><a href='/research/geometry_proc/' class='list-group-item'>Geometry Processing</a><a href='/research/image_video/' class='list-group-item'>Image and Video</a><a href='/research/materials/' class='list-group-item'>Materials</a><a href='/research/physics_simulation/' class='list-group-item'>Physics Simulation</a><a href='/research/rendering/' class='list-group-item'>Rendering</a><a href='/research/telepresence/' class='list-group-item'>Telepresence</a><a href='/research/visualization/' class='list-group-item active'>Visualization</a><a href='/research/past_projects/' class='list-group-item'>Project Archive</a>				</div>
+			</div>
+			<!--  end side menu -->
+			<div class="col-xs-12 col-sm-9">
+				<p class="pull-left visible-xs">
+					<button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+				</p>
+				<h2 class="pageTitle">Visualization</h2>
+				<!-- CONTENT STARTS HERE -->
+				
+<div class="singleProject">
+
+	<h3>Introduction</h3>
+		<p class="content" align="justify">
+			Vector field visualization is a major discipline of scientific visualization that helps to push the frontiers of research in fluid mechanics, medicine, biology, astrophysics and many more. Our goal is to develop novel algorithms that help to extract features in flows, such as vortices or separating structures. We improve the rendering quality to increase the reliability of the obtained visualizations, and we put the users first to let them emphasize and discover certain structures of interest. We investigate the properties of traditional flows such as gases and fluids, as well as higher-dimensional flows that describe the motion of finite-sized objects carried by fluids, also known as inertial particles.
+		</p>
+		
+	<h3>Topics</h3>	
+		<p class="content"><b>Feature Extraction in Unsteady Flows</b></p>
+		<p class="content" align="justify">
+			Our research is dedicated to novel extraction and rendering techniques for the visualization of features in unsteady flows. For this, we apply techniques from light transport in heterogeneous participating media to the unbiased rendering of features in Lagrangian scalar fields. An example in atmospheric flows are the ridges of the finite-time Lyapunov exponent (FTLE), which constrain the advection of trace gases, guide temperature diffusion, and cloud formation.
+		</p>
+		
+		<p align="center">
+			<img src="images/unsteady.png" class="img-responsive" align="center" alt=""/>
+		<br/>
+		
+		<!--============================================================================================-->
+		
+		<p class="content"><b>Inertial Particle Dynamics</b></p>
+		<p class="content" align="justify">
+			Recent research in flow visualization focused on the analysis of massless particles. However, in many application scenarios, the mass of particles and their resulting inertia are essential, for instance when sand particles interact with aircraft. The governing ordinary differential equation of even simple inertial flow models is up to seven dimensional, which makes feature extraction a challenging task. We extract and visualize integral geometry, study the vortical motion and separation behavior of inertial particles, and extend traditional vector field topology to the inertial case.
+		</p>
+		
+		<p align="center">
+			<img src="images/inertial.png" class="img-responsive" align="center" alt=""/>
+		<br/>
+		
+				
+		<!--============================================================================================-->
+		
+		<p class="content"><b>Optimal Reference Frames for Vortex Extraction</b></p>
+		<p class="content" align="justify">
+			Vortex extraction is among the most challenging tasks of vector field analysis. We investigate elegant optimization-based approaches that extract vortices in an optimal near-steady reference frame. Vortex measures thereby become invariant under initial rotations and translations of the observer, i.e., they become objective.
+		</p>
+		
+		<p align="center">
+			<img src="images/frames.png" class="img-responsive" align="center" alt=""/>
+		<br/>
+
+		
+		<!--============================================================================================-->
+		
+		<p class="content"><b>Visibility Optimization</b></p>
+		<p class="content" align="justify">
+			When it comes to 3D flow visualization, we often encounter occlusion problems when displaying dense sets of points, lines or multiple surfaces. A vital aspect is the careful selection of the primitives that best communicate the relevant features in a data set. We investigate optimization-based approaches that adjust the opacity of points, lines and surfaces to strive for a balance between the presentation of relevant information and occlusion avoidance.
+		</p>
+		
+		<p align="center">
+			<img src="images/opacity.png" class="img-responsive" align="center" alt=""/>
+		<br/>
+		
+		
+	<h3>Publications</h3>
+	<ul><div class='pageContent publications'><h3><a name='2018'></a>2018</h3><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperIbr18b.php'><b>Ibr18b</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2018/Ibr18b/Ibr18b_1.png'>
+			<img src='/Downloads/Publications/Papers/2018/Ibr18b/Ibr18b_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Ibr18b'></a>
+		<i>R. Imahorn, I. Baeza Rojo, T. G&uuml;nther</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperIbr18b.php'><b>Visualization and Analysis of Deep Water Asteroid Impacts</b></a>		<br/>
+		IEEE Scientific Visualization Contest (Berlin, Germany, October 21-26, 2018), , vol. , no. , 2018, pp.   		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2018/Ibr18b/Ibr18b.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2018/Ibr18b.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2018/Ibr18b/Ibr18b.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2018/Ibr18b/Ibr18b.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperGun18c.php'><b>Gun18c</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2018/Gun18c/Gun18c_1.png'>
+			<img src='/Downloads/Publications/Papers/2018/Gun18c/Gun18c_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Gun18c'></a>
+		<i>T. G&uuml;nther, H. Theisel</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperGun18c.php'><b>Hyper-Objective Vortices</b></a>		<br/>
+		IEEE Transactions on Visualization and Computer Graphics, IEEE, vol. , no. , 2018, pp.  		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2018/Gun18c/Gun18c.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2018/Gun18c.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2018/Gun18c/Gun18c.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2018/Gun18c/Gun18c.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperRov18c.php'><b>Rov18c</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2018/Rov18c/Rov18c_1.png'>
+			<img src='/Downloads/Publications/Papers/2018/Rov18c/Rov18c_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Rov18c'></a>
+		<i>R. Roveri, D. J. Lehmann, M. Gross, T. G&uuml;nther</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperRov18c.php'><b>Correlated Point Sampling for Geospatial Scalar Field Visualization</b></a>		<br/>
+		Vision, Modeling and Visualization (Stuttgart, Germany, October 10-12, 2018), pp. 119-126 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2018/Rov18c/Rov18c.pdf'>PDF</a>]		[<a href='/Downloads/Publications/Papers/2018/Rov18c/Rov18c.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2018/Rov18c/Rov18c.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperHol18a.php'><b>Hol18a</b></a><b>]</b>
+<img src='images/award.png' alt=''/ class='paperAward'></div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2018/Hol18a/Hol18a_1.png'>
+			<img src='/Downloads/Publications/Papers/2018/Hol18a/Hol18a_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Hol18a'></a>
+		<i>J. Holbein, T. G&uuml;nther</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperHol18a.php'><b>Parameter Space Comparison of Inertial Particle Models</b></a>		<br/>
+		Vision, Modeling and Visualization (Stuttgart, Germany, October 10-12, 2018), pp. 63-70  <i>(Best Paper Award)</i>		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2018/Hol18a/Hol18a.pdf'>PDF</a>]		[<a href='/Downloads/Publications/Papers/2018/Hol18a/Hol18a.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2018/Hol18a/Hol18a.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperGun18b.php'><b>Gun18b</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2018/Gun18b/Gun18b_1.png'>
+			<img src='/Downloads/Publications/Papers/2018/Gun18b/Gun18b_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Gun18b'></a>
+		<i>T. G&uuml;nther, H. Theisel</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperGun18b.php'><b>Objective Vortex Corelines of Finite-sized Objects in Fluid Flows</b></a>		<br/>
+		IEEE Transactions on Visualization and Computer Graphics (Proc. IEEE Scientific Visualization 2018), IEEE, vol. , no. , 2018, pp.  		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2018/Gun18b/Gun18b.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2018/Gun18b.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2018/Gun18b/Gun18b.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2018/Gun18b/Gun18b.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperMeu18b.php'><b>Meu18b</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2018/Meu18b/Meu18b_1.png'>
+			<img src='/Downloads/Publications/Papers/2018/Meu18b/Meu18b_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Meu18b'></a>
+		<i>M. Meuschke, T. G&uuml;nther, P. Berg, R. Wickenhoefer, B. Preim, K. Lawonn</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperMeu18b.php'><b>Visual Analysis of Aneurysm Data using Statistical Graphics</b></a>		<br/>
+		IEEE Transactions on Visualization and Computer Graphics (Proc. IEEE Scientific Visualization 2018), IEEE, vol. , no. , 2018, pp.  		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2018/Meu18b/Meu18b.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2018/Meu18b.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2018/Meu18b/Meu18b.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2018/Meu18b/Meu18b.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperRim18a.php'><b>Rim18a</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2018/Rim18a/Rim18a_1.png'>
+			<img src='/Downloads/Publications/Papers/2018/Rim18a/Rim18a_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Rim18a'></a>
+		<i>N. Rimensberger, M. Gross, T. G&uuml;nther</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperRim18a.php'><b>Visualization of Clouds and Atmospheric Air Flows</b></a>		<br/>
+		IEEE Computer Graphics and Applications, , vol. , no. , 2018, pp.  		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2018/Rim18a/Rim18a.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2018/Rim18a.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2018/Rim18a/Rim18a.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2018/Rim18a/Rim18a.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperRoe18a.php'><b>Roe18a</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2018/Roe18a/Roe18a_1.png'>
+			<img src='/Downloads/Publications/Papers/2018/Roe18a/Roe18a_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Roe18a'></a>
+		<i>I. Roesch, T. G&uuml;nther</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperRoe18a.php'><b>Visualization of Neural Network Predictions for Weather Forecasting</b></a>		<br/>
+		Computer Graphics Forum, Blackwell Publishing, vol. , no. , 2018, pp.  		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2018/Roe18a/Roe18a.pdf'>PDF</a>][<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2018/Roe18a/Roe18a_supp.pdf'>PDF suppl.</a>] [<a href='/Downloads/Publications/PaperVideos/2018/Roe18a.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2018/Roe18a/Roe18a.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2018/Roe18a/Roe18a.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperIbr18a.php'><b>Ibr18a</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2018/Ibr18a/Ibr18a_1.png'>
+			<img src='/Downloads/Publications/Papers/2018/Ibr18a/Ibr18a_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Ibr18a'></a>
+		<i>I. Baeza Rojo, M. Gross, T. G&uuml;nther</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperIbr18a.php'><b>Visualizing the Phase Space of Heterogeneous Inertial Particles in 2D Flows</b></a>		<br/>
+		Proceedings of the Eurographics Conference on Visualization (Brno, Czech Republic, June 4-8, 2018), Computer Graphics Forum, vol. 37, no. 3, 2018, pp. 289-300 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2018/Ibr18a/Ibr18a.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2018/Ibr18a.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2018/Ibr18a/Ibr18a.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2018/Ibr18a/Ibr18a.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperGun18a.php'><b>Gun18a</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2018/Gun18a/Gun18a_1.png'>
+			<img src='/Downloads/Publications/Papers/2018/Gun18a/Gun18a_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Gun18a'></a>
+		<i>T. G&uuml;nther, H. Theisel</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperGun18a.php'><b>The State of the Art in Vortex Extraction</b></a>		<br/>
+		Computer Graphics Forum, Wiley, vol. 37, no. 3, 2018, pp. 149-173 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2018/Gun18a/Gun18a.pdf'>PDF</a>]		[<a href='/Downloads/Publications/Papers/2018/Gun18a/Gun18a.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2018/Gun18a/Gun18a.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperMeu18a.php'><b>Meu18a</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2018/Meu18a/Meu18a_1.png'>
+			<img src='/Downloads/Publications/Papers/2018/Meu18a/Meu18a_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Meu18a'></a>
+		<i>M. Meuschke, T. G&uuml;nther, R. Wickenh&ouml;fer, M. Gross, B. Preim, K. Lawonn</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperMeu18a.php'><b>Management of Cerebral Aneurysm Descriptors based on an Automatic Ostium Extraction</b></a>		<br/>
+		IEEE Computer Graphics and Applications, IEEE, vol. 38, no. 3, 2018, pp. 58-72 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2018/Meu18a/Meu18a.pdf'>PDF</a>]		[<a href='/Downloads/Publications/Papers/2018/Meu18a/Meu18a.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2018/Meu18a/Meu18a.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><h3><a name='2017'></a>2017</h3><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperRim17a.php'><b>Rim17a</b></a><b>]</b>
+<img src='images/award.png' alt=''/ class='paperAward'></div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2017/Rim17a/Rim17a_1.png'>
+			<img src='/Downloads/Publications/Papers/2017/Rim17a/Rim17a_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Rim17a'></a>
+		<i>N. Rimensberger, M. Gross, T. G&uuml;nther</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperRim17a.php'><b>Visualization of Clouds and Atmospheric Air Flows</b></a>		<br/>
+		IEEE Scientific Visualization Contest (Phoenix, AZ, USA, October 1-6, 2017), pp.    <i>(Contest Winner)</i>		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2017/Rim17a/Rim17a.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2017/Rim17a.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2017/Rim17a/Rim17a.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2017/Rim17a/Rim17a.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperGun17d.php'><b>Gun17d</b></a><b>]</b>
+<img src='images/award.png' alt=''/ class='paperAward'></div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2017/Gun17d/Gun17d_1.png'>
+			<img src='/Downloads/Publications/Papers/2017/Gun17d/Gun17d_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Gun17d'></a>
+		<i>I. Roesch, T. G&uuml;nther</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperGun17d.php'><b>Visualization of Neural Network Predictions for Weather Forecasting</b></a>		<br/>
+		Vision, Modeling and Visualization (Bonn, Germany, September 25-27, 2017), pp. 61-68  <i>(Honorable Mention Award)</i>		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2017/Gun17d/Gun17d.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2017/Gun17d.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2017/Gun17d/Gun17d.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2017/Gun17d/Gun17d.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperFri17a.php'><b>Fri17a</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2017/Fri17a/Fri17a_1.png'>
+			<img src='/Downloads/Publications/Papers/2017/Fri17a/Fri17a_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Fri17a'></a>
+		<i>A. Friederici, T. G&uuml;nther, C. Roessl, H. Theisel</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperFri17a.php'><b>Finite Time Steady Vector Field Topology - Theoretical Foundation and 3D Case</b></a>		<br/>
+		Vision, Modeling and Visualization (Bonn, Germany, September 25-27, 2017), pp. 95-102 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2017/Fri17a/Fri17a.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2017/Fri17a.avi'>Video</a>]		[<a href='/Downloads/Publications/Papers/2017/Fri17a/Fri17a.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2017/Fri17a/Fri17a.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperGun17e.php'><b>Gun17e</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2017/Gun17e/Gun17e_1.png'>
+			<img src='/Downloads/Publications/Papers/2017/Gun17e/Gun17e_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Gun17e'></a>
+		<i>T. G&uuml;nther, A. Kuhn, H.-C. Hege, M. Gross, H. Theisel</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperGun17e.php'><b>Progressive Monte Carlo Rendering of Atmospheric Flow Features Across Scales</b></a>		<br/>
+		Physical Review Fluids, American Physical Society (APS), vol. 2, no. 9, 2017, pp. 090502 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2017/Gun17e/Gun17e.pdf'>PDF</a>]		[<a href='/Downloads/Publications/Papers/2017/Gun17e/Gun17e.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2017/Gun17e/Gun17e.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperGun17c.php'><b>Gun17c</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2017/Gun17c/Gun17c_1.png'>
+			<img src='/Downloads/Publications/Papers/2017/Gun17c/Gun17c_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Gun17c'></a>
+		<i>T. G&uuml;nther, M. Gross, H. Theisel</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperGun17c.php'><b>Generic Objective Vortices for Flow Visualization</b></a>		<br/>
+		Proceedings of ACM SIGGRAPH (Los Angeles, USA, July 30 - August 3, 2017), ACM Transactions on Graphics, vol. 36, no. 4, pp. 141:1--141:11 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2017/Gun17c/Gun17c.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2017/Gun17c.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2017/Gun17c/Gun17c.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2017/Gun17c/Gun17c.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperGun17b.php'><b>Gun17b</b></a><b>]</b>
+<img src='images/award.png' alt=''/ class='paperAward'></div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2017/Gun17b/Gun17b_1.png'>
+			<img src='/Downloads/Publications/Papers/2017/Gun17b/Gun17b_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Gun17b'></a>
+		<i>T. G&uuml;nther, M. Gross</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperGun17b.php'><b>Flow-Induced Inertial Steady Vector Field Topology</b></a>		<br/>
+		Proceedings of Eurographics (Lyon, France, April 24-28, 2017), Computer Graphics Forum, vol. 36, no. 2, pp. 143-152  <i>(Honorable Mention Award)</i>		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2017/Gun17b/Gun17b.pdf'>PDF</a>][<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2017/Gun17b/Gun17b_supp.pdf'>PDF suppl.</a>] [<a href='/Downloads/Publications/PaperVideos/2017/Gun17b.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2017/Gun17b/Gun17b.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2017/Gun17b/Gun17b.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperGun17a.php'><b>Gun17a</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2017/Gun17a/Gun17a_1.png'>
+			<img src='/Downloads/Publications/Papers/2017/Gun17a/Gun17a_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Gun17a'></a>
+		<i>T. G&uuml;nther, H. Theisel, M. Gross</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperGun17a.php'><b>Decoupled Opacity Optimization for Points, Lines and Surfaces</b></a>		<br/>
+		Proceedings of Eurographics (Lyon, France, April 24-28, 2017), Computer Graphics Forum, vol. 36, no. 2, pp. 153-162 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2017/Gun17a/Gun17a.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2017/Gun17a.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2017/Gun17a/Gun17a.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2017/Gun17a/Gun17a.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><h3><a name='2016'></a>2016</h3><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperGun16a.php'><b>Gun16a</b></a><b>]</b>
+<img src='images/award.png' alt=''/ class='paperAward'></div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2016/Gun16a/Gun16a_1.png'>
+			<img src='/Downloads/Publications/Papers/2016/Gun16a/Gun16a_1_thmb.png' height='40' border='0' alt=''/></a>
+		<a href='/Downloads/Publications/Papers/2016/Gun16a/Gun16a_2.png'>
+			<img src='/Downloads/Publications/Papers/2016/Gun16a/Gun16a_2_thmb.png' height='40' border='0' alt=''/></a>
+		<a href='/Downloads/Publications/Papers/2016/Gun16a/Gun16a_3.png'>
+			<img src='/Downloads/Publications/Papers/2016/Gun16a/Gun16a_3_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Gun16a'></a>
+		<i>T. G&uuml;nther, A. Kuhn, H.-C. Hege, M. Gross, H. Theisel</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperGun16a.php'><b>Progressive Monte Carlo Rendering of Atmospheric Flow Features Across Scales</b></a>		<br/>
+		Gallery of Fluid Motion Posters, 69th Annual Meeting of the APS Division of Fluid Dynamics  <i>(Milton van Dyke Award)</i>		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2016/Gun16a/Gun16a.pdf'>PDF</a>]		[<a href='/Downloads/Publications/Papers/2016/Gun16a/Gun16a.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2016/Gun16a/Gun16a.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperGun16b.php'><b>Gun16b</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2016/Gun16b/Gun16b_1.png'>
+			<img src='/Downloads/Publications/Papers/2016/Gun16b/Gun16b_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Gun16b'></a>
+		<i>T. G&uuml;nther, H. Theisel</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperGun16b.php'><b>Singularities of the Inertial Flow Map Gradient</b></a>		<br/>
+		Vision, Modeling and Visualization (Bayreuth, Germany, October 10-12, 2016), pp. 69-76 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2016/Gun16b/Gun16b.pdf'>PDF</a>]		[<a href='/Downloads/Publications/Papers/2016/Gun16b/Gun16b.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2016/Gun16b/Gun16b.abstract'>Abstract</a>]
+</div>
+</div></div></ul>
+</div>
+
+				<!-- CONTENT ENDS HERE -->
+			</div>
+			<!-- end content -->
+		</div>
+	<!-- </div> Marcel removed this -->
+</div>
+<!-- footer -->
+<div class="container wrapperCloser">
+	<div class="grey"><br></div>
+	<div class="red"><br></div>
+	<div class="green"><br></div>
+	<div class="blue"><br></div>
+</div>
+<div class="container footer">
+		<div class='col-xl-6 col-lg-6 col-sm-6 col-xs-12 footerA'>&copy; CGL, ETH Zurich</div>
+	<!--<div class='col-xl-6 col-lg-6 col-sm-6 col-xs-12 footerB'>wwwgraph<img src='/images2014/at.png' alt='o'/>inf.ethz.ch</div>-->
+	</div>
+<!-- end footer -->
+<!--   end new code   -->
+
+
+<!-- old stuff
+end old stuff  -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/offcanvas.js"></script>
+</body>
+</html>

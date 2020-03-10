@@ -1,0 +1,596 @@
+ 	
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'><html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en' lang='en'>	<head>
+		<title>CGL @ ETHZ - Physics Simulation</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	    <meta charset="UTF-8"/>
+	    <meta name="description" content=""/>
+	    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+	    <link href="/css/bootstrap.min.css" rel="stylesheet"/>
+	    <link href="/css/offcanvas.css" rel="stylesheet"/>
+	    <link href="/css/custom2014.css" rel="stylesheet"/>
+	</head>
+	
+<!-- Side menu page -->
+<body class="Physics Simulation">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-53220520-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<!--   new code   -->
+<div class="container headerBar">
+	<div class="col-lg-6 col-md-6 col-xs-6 headerBarA">
+		<h1><a href="/"><span>Computer Graphics Laboratory ETH Zurich</span></a>
+	</h1>
+	</div>
+	<div class="col-lg-6 col-md-6 col-xs-6 headerBarB">
+		<a href="http://www.ethz.ch"><span>ETH</span></a>
+	</div>
+</div>
+<div class="container navbar navbar-inverse menuBar" role="navigation">
+<!--  menu -->
+	<div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href='/aboutus/' class='list-group-item'>Contact</a></li><li><a href='/people/' class='list-group-item'>People</a></li><li><a href='/research/' class='list-group-item active'>Research</a></li><li><a href='/teaching/' class='list-group-item'>Teaching</a></li><li><a href='/publications/' class='list-group-item'>Publications</a></li><li><a href='/events/' class='list-group-item'>Events</a></li><li><a href='/industrypartners/' class='list-group-item'>Industry Partners</a></li><li><a href='/internal/' class='list-group-item'>Internal</a></li>                </ul>
+            </div>
+    </div>
+<!--  end menu -->
+</div>
+<div class="container contentWrapper">
+	<div class="row navTools">
+		<!-- breadcrumb -->	
+		<div class="col-lg-8 col-sm-8 col-xs-12 breadCrumb">
+			<!--<a href='http://www.ethz.ch'>ETH Zurich</a> &raquo; <a href='http://www.inf.ethz.ch/'>D-INFK</a> &raquo; <a href='http://ivc.ethz.ch/'>IVC</a> &raquo;--> <a href='/'>CGL</a>  &raquo; <a href='/research/'>Research</a> &raquo; <a href='/research/physics_simulation/'>Physics Simulation</a>		</div>
+		<!-- end breadcrumb -->	
+		<!-- search -->	
+		<div class="col-lg-4 col-sm-4 col-xs-12 searchEngine">
+			
+
+	<form method="get" action="/content/search.php" name="search">
+			<input type="text" size='17' name='q' value="Search" onclick="if(this.value=='Search'){this.value=''}" onblur="if(this.value==''){this.value='Search'}" />
+		</form>
+
+			</div>
+		<!-- end search -->	
+	</div>
+	<!-- content -->
+	<!-- <div class="row"> Marcel removed this -->
+		<div class="row row-offcanvas row-offcanvas-left">
+			<!--  side menu -->
+			<div class="col-xs-6 col-sm-3 sidebar-offcanvas noLeftPadding" id="sidebar" role="navigation">
+				<div class="list-group sideMenu">
+					<a href='/research/animation/' class='list-group-item'>Animation</a><a href='/research/ar_games/' class='list-group-item'>AR and Games</a><a href='/research/data_analytics/' class='list-group-item'>AI and Analytics</a><a href='/research/digital_humans/' class='list-group-item'>Digital Humans</a><a href='/research/geometry_proc/' class='list-group-item'>Geometry Processing</a><a href='/research/image_video/' class='list-group-item'>Image and Video</a><a href='/research/materials/' class='list-group-item'>Materials</a><a href='/research/physics_simulation/' class='list-group-item active'>Physics Simulation</a><a href='/research/rendering/' class='list-group-item'>Rendering</a><a href='/research/telepresence/' class='list-group-item'>Telepresence</a><a href='/research/visualization/' class='list-group-item'>Visualization</a><a href='/research/past_projects/' class='list-group-item'>Project Archive</a>				</div>
+			</div>
+			<!--  end side menu -->
+			<div class="col-xs-12 col-sm-9">
+				<p class="pull-left visible-xs">
+					<button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+				</p>
+				<h2 class="pageTitle">Physics Simulation</h2>
+				<!-- CONTENT STARTS HERE -->
+				
+<div class="singleProject">
+
+	<h3>Introduction</h3>
+		<p class="content" align="justify">
+			Computer-animated objects are ubiquitous in entertainment and training applications of computer graphics (e.g. videogames, feature films, surgical simulators, etc.). As opposed to tedious and rather inflexible key-frame animation, physics-based simulation offers a concise, but rich and flexible way of defining the behavior of animated objects, by allowing the laws of physics to determine or guide their motion. In contrast to the mathematical modeling of physical objects in computational physics, our primary concern are stability and efficiency of the algorithms as well as controllability of the objects and simulations. 
+		</p>
+		
+	<h3>Topics</h3>	
+		<p class="content"><b>Fluid Simulation</b></p>
+		<p class="content" align="justify">
+		At the CGL, we are working on techniques for fast, stable and art-directable creation of highly detailed simulations of water and smoke. Using mesh- and particle-based methods, we have developed novel techniques for turbulence modeling, multi-resolution simulation, data-driven fluids, and tracking of mesh surfaces. 
+</p>
+<p align="center">
+		<img src="images/Fluids2.png" class=“fluids” align="center" width="790" alt=""/>
+		<br/>
+
+		</p>
+
+		<p class="content"><b>Elastic Materials</b></p>
+		We are working on methods for efficient and robust simulation and control of elastic objects. This includes our example-based method for art-directability of deformations, the subspace clothing method for reproducing diverse and detailed folding patterns, as well as our discontinuous Galerkin FEM method that supports arbitrary polyhedral convex and non-convex elements that allows for efficient topological changes without the need for remeshing.
+
+		<p class="content" align="justify">
+			</p>
+		<img src="images/Elastics.png" class="elastics" align="center" width="790" alt=""/>
+		<br/>
+
+		</p>
+	
+	<h3>Publications</h3>
+	<ul><div class='pageContent publications'><h3><a name='2019'></a>2019</h3><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperKim19a.php'><b>Kim19a</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2019/Kim19a/Kim19a_1.png'>
+			<img src='/Downloads/Publications/Papers/2019/Kim19a/Kim19a_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Kim19a'></a>
+		<i>B. Kim, V. C. Azevedo, N. Thuerey, T. Kim, M. Gross, B. Solenthaler</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperKim19a.php'><b>Deep Fluids: A Generative Network for Parameterized Fluid Simulations</b></a>		<br/>
+		Proceedings of Eurographics (Genova, Italy, May 6-10, 2019), Computer Graphics Forum, vol. 38, no. 2, pp. - 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2019/Kim19a/Kim19a.pdf'>PDF</a>][<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2019/Kim19a/Kim19a_supp.pdf'>PDF suppl.</a>]		[<a href='/Downloads/Publications/Papers/2019/Kim19a/Kim19a.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2019/Kim19a/Kim19a.abstract'>Abstract</a>]
+ [<a href='https://www.youtube.com/watch?v=hSDzOZ9IO8U' target='_blank'>YouTube</a>]</div>
+</div></div><div class='pageContent publications'><h3><a name='2018'></a>2018</h3><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperBor18a.php'><b>Bor18a</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2018/Bor18a/Bor18a_1.png'>
+			<img src='/Downloads/Publications/Papers/2018/Bor18a/Bor18a_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Bor18a'></a>
+		<i>D. Borer, M. Guay, R. W. Sumner</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperBor18a.php'><b>Keys-to-Sim: Transferring Hand-Crafted Key-framed Animations to Simulated Figures using Wide Band Stochastic Trajectory Optimization</b></a>		<br/>
+		To appear: Computer Graphics and Visual Computing 2018, The Eurographics Association (Swansea, Wales, September 13-14, 2018) 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2018/Bor18a/Bor18a.pdf'>PDF</a>][<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2018/Bor18a/Bor18a_supp.pdf'>PDF suppl.</a>] [<a href='/Downloads/Publications/PaperVideos/2018/Bor18a_supp.mp4'>Video</a>] [<a href='/Downloads/Publications/PaperVideos/2018/Bor18a.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2018/Bor18a/Bor18a.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2018/Bor18a/Bor18a.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><h3><a name='2015'></a>2015</h3><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperJeo15a.php'><b>Jeo15a</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2015/Jeo15a/Jeo15a_1.png'>
+			<img src='/Downloads/Publications/Papers/2015/Jeo15a/Jeo15a_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Jeo15a'></a>
+		<i>L. Ladicky, S. Jeong, B. Solenthaler, M. Pollefeys, M. Gross</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperJeo15a.php'><b>Data-driven Fluid Simulations using Regression Forests</b></a>		<br/>
+		Proceedings of ACM SIGGRAPH Asia (Kobe, Japan, 2-5 November, 2015), ACM Transactions on Graphics, vol. 34, no. 6, pp. 199:1--199:9 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2015/Jeo15a/Jeo15a.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2015/Jeo15a.mov'>Video</a>]		[<a href='/Downloads/Publications/Papers/2015/Jeo15a/Jeo15a.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2015/Jeo15a/Jeo15a.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><h3><a name='2014'></a>2014</h3><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperSol14b.php'><b>Sol14b</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2014/Sol14b/Sol14b_1.png'>
+			<img src='/Downloads/Publications/Papers/2014/Sol14b/Sol14b_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Sol14b'></a>
+		<i>F. Thaler, B. Solenthaler, M. Gross</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperSol14b.php'><b>A Parallel Architecture for IISPH Fluids</b></a>		<br/>
+		Proceedings of Virtual Reality Interaction and Physical Simulation (VRIPHYS) (Dresden, Germany, September 24-25, 2014), pp. 119-124 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2014/Sol14b/Sol14b.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2014/Sol14b.mov'>Video</a>]		[<a href='/Downloads/Publications/Papers/2014/Sol14b/Sol14b.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2014/Sol14b/Sol14b.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperSol14a.php'><b>Sol14a</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2014/Sol14a/Sol14a_1.png'>
+			<img src='/Downloads/Publications/Papers/2014/Sol14a/Sol14a_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Sol14a'></a>
+		<i>M. Ihmsen, J. Orthmann, B. Solenthaler, A. Kolb, M. Teschner</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperSol14a.php'><b>SPH Fluids in Computer Graphics</b></a>		<br/>
+		Proceedings of Eurographics (Strasbourg, France, April, 2014), Computer Graphics Forum, vol. , no. , pp. 21-42 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2014/Sol14a/Sol14a.pdf'>PDF</a>]		[<a href='/Downloads/Publications/Papers/2014/Sol14a/Sol14a.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2014/Sol14a/Sol14a.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperHahn14a.php'><b>Hahn14a</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2014/Hahn14a/Hahn14a_1.png'>
+			<img src='/Downloads/Publications/Papers/2014/Hahn14a/Hahn14a_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Hahn14a'></a>
+		<i>F. Hahn, B. Thomaszewski, S. Coros, R. Sumner, F. Cole, M. Meyer, T. DeRose, M. Gross</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperHahn14a.php'><b>Subspace Clothing Simulation Using Adaptive Bases</b></a>		<br/>
+		Proceedings of ACM SIGGRAPH (Vancouver, Canada, August 10-14, 2014), ACM Transactions on Graphics, vol. 34, no. 4, pp. 105:1--105:9 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2014/Hahn14a/Hahn14a.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2014/Hahn14a.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2014/Hahn14a/Hahn14a.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2014/Hahn14a/Hahn14a.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><h3><a name='2013'></a>2013</h3><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperSol13a.php'><b>Sol13a</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2013/Sol13a/Sol13a_1.png'>
+			<img src='/Downloads/Publications/Papers/2013/Sol13a/Sol13a_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Sol13a'></a>
+		<i>C. Horvath, B. Solenthaler</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperSol13a.php'><b>Mass Preserving Multi-Scale SPH</b></a>		<br/>
+		Pixar Technical Memo 13-04, Pixar Animation Studios 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2013/Sol13a/Sol13a.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2013/Sol13a-MassPreservingMulti-ScaleSPH.mov'>Video</a>]		[<a href='/Downloads/Publications/Papers/2013/Sol13a/Sol13a.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2013/Sol13a/Sol13a.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperSol13b.php'><b>Sol13b</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2013/Sol13b/Sol13b_1.png'>
+			<img src='/Downloads/Publications/Papers/2013/Sol13b/Sol13b_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Sol13b'></a>
+		<i>M. Ihmsen, J. Cornelis, B. Solenthaler, C. Horvath, M. Teschner</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperSol13b.php'><b>Implicit Incompressible SPH</b></a>		<br/>
+		IEEE Transactions on Visualization and Computer Graphics, vol. , no. , 2013, pp.  		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2013/Sol13b/Sol13b.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2013/Sol13b-ImplicitIncompressibleSPH.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2013/Sol13b/Sol13b.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperHahn13.php'><b>Hahn13</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2013/Hahn13/Hahn13_1.png'>
+			<img src='/Downloads/Publications/Papers/2013/Hahn13/Hahn13_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Hahn13'></a>
+		<i>F. Hahn, B. Thomaszewski, S. Coros, R. Sumner, M. Gross</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperHahn13.php'><b>Efficient simulation of secondary motion in rig-space</b></a>		<br/>
+		Proceedings of the 2013 ACM SIGGRAPH/Eurographics Symposium on Computer Animation (Anaheim, USA, July 19-21, 2013), pp. 165-171 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2013/Hahn13/Hahn13.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2013/Hahn13-SCA2013-EfficientSimulationOf SecondaryMotionIn RigSpace.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2013/Hahn13/Hahn13.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2013/Hahn13/Hahn13.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><h3><a name='2012'></a>2012</h3><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperSchu12.php'><b>Schu12</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2012/Schu12/Schu12_1.png'>
+			<img src='/Downloads/Publications/Papers/2012/Schu12/Schu12_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Schu12'></a>
+		<i>C. Schumacher, B. Thomaszewski, S. Coros, S. Martin, R. Sumner, M. Gross</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperSchu12.php'><b>Efficient Simulation of Example-based Materials</b></a>		<br/>
+		Proceedings of the 2012 ACM SIGGRAPH/Eurographics Symposium on Computer Animation (Lausanne, Switzerland, July 29-31, 2012), pp. 1-8 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2012/Schu12/Schu12.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2012/Schu12-SCA1012-EfficientSimulationOfExampleBasedMaterials.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2012/Schu12/Schu12.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperHahn12.php'><b>Hahn12</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2012/Hahn12/Hahn12_1.png'>
+			<img src='/Downloads/Publications/Papers/2012/Hahn12/Hahn12_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Hahn12'></a>
+		<i>F. Hahn, S. Martin, B. Thomaszewski, R. Sumner, S. Coros, M. Gross</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperHahn12.php'><b>Rig-Space Physics</b></a>		<br/>
+		Proceedings of ACM SIGGRAPH (Los Angeles, USA, August 5-9, 2012), ACM Transactions on Graphics, vol. 31, no. 4, pp. 72:1-72:8 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2012/Hahn12/Hahn12.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2012/Hahn12-Siggraph2012-RigSpacePhysics.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2012/Hahn12/Hahn12.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2012/Hahn12/Hahn12.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperSol12.php'><b>Sol12</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2012/Sol12/Sol12_1.png'>
+			<img src='/Downloads/Publications/Papers/2012/Sol12/Sol12_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Sol12'></a>
+		<i>N. Akinci, M. Ihmsen, G. Akinci, B. Solenthaler, M. Teschner</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperSol12.php'><b>Versatile Rigid-Fluid Coupling for Incompressible SPH</b></a>		<br/>
+		Proceedings of ACM SIGGRAPH (Los Angeles, USA, August 5-9, 2012), ACM Transactions on Graphics, vol. 31, no. 4, pp. 62:1-62:8 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2012/Sol12/Sol12.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2012/Sol12-Siggraph2012-VersatileRigidFluidCouplingForIncompressibleSPH.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2012/Sol12/Sol12.bib'>BibTeX</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperPfa12.php'><b>Pfa12</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2012/Pfa12/Pfa12_1.png'>
+			<img src='/Downloads/Publications/Papers/2012/Pfa12/Pfa12_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Pfa12'></a>
+		<i>T. Pfaff, N. Thuerey, M. Gross</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperPfa12.php'><b>Lagrangian Vortex Sheets for Animating Fluids</b></a>		<br/>
+		Proceedings of ACM SIGGRAPH (Los Angeles, USA, August 5-9, 2012), ACM Transactions on Graphics, vol. 31, no. 4, pp. 112:1-112:8 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2012/Pfa12/Pfa12.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2012/Pfa12-Siggraph2012-LagrangianVortexSheetsForAnimatingFluids.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2012/Pfa12/Pfa12.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2012/Pfa12/Pfa12.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><h3><a name='2011'></a>2011</h3><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperSol11b.php'><b>Sol11b</b></a><b>]</b>
+<img src='images/award.png' alt=''/ class='paperAward'></div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2011/Sol11b/Sol11b_1.png'>
+			<img src='/Downloads/Publications/Papers/2011/Sol11b/Sol11b_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Sol11b'></a>
+		<i>B. Solenthaler, P. Bucher, N. Chentanez, M. M&uuml;ller, M. Gross</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperSol11b.php'><b>SPH Based Shallow Water Simulation</b></a>		<br/>
+		Proceedings of Virtual Reality Interactions and Physical Simulations (VRIPhys) (Lyon, France, December 5-6, 2011), pp. 39-46  <i>(Best Paper Award)</i>		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2011/Sol11b/Sol11b.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2011/Sol11b-VRIPhys2011-SPHBasedShallowWaterSimulation.mov'>Video</a>]		[<a href='/Downloads/Publications/Papers/2011/Sol11b/Sol11b.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2011/Sol11b/Sol11b.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperSol11a.php'><b>Sol11a</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2011/Sol11a/Sol11a_1.png'>
+			<img src='/Downloads/Publications/Papers/2011/Sol11a/Sol11a_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Sol11a'></a>
+		<i>B. Solenthaler, M. Gross</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperSol11a.php'><b>Two-Scale Particle Simulation</b></a>		<br/>
+		Proceedings of ACM SIGGRAPH (Vancouver, Canada, August 7-11, 2011), ACM Transactions on Graphics, vol. 30, no. 4, pp. 81:1-81:8 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2011/Sol11a/Sol11a.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2011/Sol11a-SIGGRAPH2011-TwoScaleParticleSimulation.mov'>Video</a>]		[<a href='/Downloads/Publications/Papers/2011/Sol11a/Sol11a.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2011/Sol11a/Sol11a.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperMar11.php'><b>Mar11</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2011/Mar11/Mar11_1.png'>
+			<img src='/Downloads/Publications/Papers/2011/Mar11/Mar11_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Mar11'></a>
+		<i>S. Martin, B. Thomaszewski, E. Grinspun, M. Gross</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperMar11.php'><b>Example-Based Elastic Materials</b></a>		<br/>
+		Proceedings of ACM SIGGRAPH (Vancouver, Canada, August 7-11, 2011), ACM Transactions on Graphics, vol. 30, no. 4, pp. 72:1-72:8 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2011/Mar11/Mar11.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2011/Mar11-SIGGRAPH2011-ExampleBasedElasticMaterials.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2011/Mar11/Mar11.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2011/Mar11/Mar11.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><h3><a name='2010'></a>2010</h3><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperPfa10.php'><b>Pfa10</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2010/Pfa10/Pfa10_1.png'>
+			<img src='/Downloads/Publications/Papers/2010/Pfa10/Pfa10_1_thmb.png' height='40' border='0' alt=''/></a>
+		<a href='/Downloads/Publications/Papers/2010/Pfa10/Pfa10_2.png'>
+			<img src='/Downloads/Publications/Papers/2010/Pfa10/Pfa10_2_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Pfa10'></a>
+		<i>T. Pfaff, N. Thuerey, J. Cohen, S. Tariq, M. Gross</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperPfa10.php'><b>Scalable Fluid Simulation using Anisotropic Turbulence Particles</b></a>		<br/>
+		Proceedings of ACM SIGGRAPH Asia (Seoul, Korea, December 15-18, 2010), ACM Transactions on Graphics, vol. 29, no. 5, pp. 174:1-174:8 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2010/Pfa10/Pfa10.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2010/Pfa10 - SIGGRAPHASIA2010 - Aniso Turbulence Particles.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2010/Pfa10/Pfa10.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2010/Pfa10/Pfa10.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperWoj10.php'><b>Woj10</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2010/Woj10/Woj10_1.png'>
+			<img src='/Downloads/Publications/Papers/2010/Woj10/Woj10_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Woj10'></a>
+		<i>C. Wojtan, N. Thuerey, M. Gross, G. Turk</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperWoj10.php'><b>Physics-Inspired Topology Changes for Thin Fluid Features</b></a>		<br/>
+		Proceedings of ACM SIGGRAPH (Los Angeles, USA, July 25-29, 2010), ACM Transactions on Graphics, vol. 29, no. 3, pp. 50:1-50:8 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2010/Woj10/Woj10.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2010/Woj10 - SIGGRAPH2010 - thin fluid features.mov'>Video</a>]		[<a href='/Downloads/Publications/Papers/2010/Woj10/Woj10.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2010/Woj10/Woj10.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperThue10.php'><b>Thue10</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2010/Thue10/Thue10_1.png'>
+			<img src='/Downloads/Publications/Papers/2010/Thue10/Thue10_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Thue10'></a>
+		<i>N. Thuerey, C. Wojtan, M. Gross, G. Turk</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperThue10.php'><b>A Multiscale Approach to Mesh-based Surface Tension Flows</b></a>		<br/>
+		Proceedings of ACM SIGGRAPH (Los Angeles, USA, July 25-29, 2010), ACM Transactions on Graphics, vol. 29, no. 3, pp. 48:1-48:10 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2010/Thue10/Thue10.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2010/Thue10 - SIGGRAPH2010 - surface tension.mov'>Video</a>]		[<a href='/Downloads/Publications/Papers/2010/Thue10/Thue10.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2010/Thue10/Thue10.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperMar10.php'><b>Mar10</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2010/Mar10/Mar10_1.jpg'>
+			<img src='/Downloads/Publications/Papers/2010/Mar10/Mar10_1_thmb.jpg' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Mar10'></a>
+		<i>S. Martin, P. Kaufmann, M. Botsch, E. Grinspun, M. Gross</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperMar10.php'><b>Unified Simulation of Elastic Rods, Shells, and Solids</b></a>		<br/>
+		Proceedings of ACM SIGGRAPH (Los Angeles, USA, July 25-29, 2010), ACM Transactions on Graphics, vol. 29, no. 3, pp. 39:1-39:10 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2010/Mar10/Mar10.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2010/Mar10 - SIGGRAPH2010 - Elastons.mov'>Video</a>]		[<a href='/Downloads/Publications/Papers/2010/Mar10/Mar10.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2010/Mar10/Mar10.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><h3><a name='2009'></a>2009</h3><div class='item'>
+<div class='paperCode'>
+<b>[</b><b>Mar09</b><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2009/Mar09/Mar09_1.png'>
+			<img src='/Downloads/Publications/Papers/2009/Mar09/Mar09_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Mar09'></a>
+		<i>S. Martin, C. Huber, P. Kaufmann, M. Gross</i><br/>
+		<b>Shape-Preserving Animation of Deformable Objects</b>		<br/>
+		Proceedings of Vision, Modeling, and Visualization (VMV) (Braunschweig, Germany, November 16-18, 2009), pp. 65-72 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2009/Mar09/Mar09.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2009/Mar09 - VMV09 - Shape-Preserving Anim.mov'>Video</a>]		[<a href='/Downloads/Publications/Papers/2009/Mar09/Mar09.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><b>Kau09b</b><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2009/Kau09b/Kau09b_1.png'>
+			<img src='/Downloads/Publications/Papers/2009/Kau09b/Kau09b_1_thmb.png' height='40' border='0' alt=''/></a>
+		<a href='/Downloads/Publications/Papers/2009/Kau09b/Kau09b_2.png'>
+			<img src='/Downloads/Publications/Papers/2009/Kau09b/Kau09b_2_thmb.png' height='40' border='0' alt=''/></a>
+		<a href='/Downloads/Publications/Papers/2009/Kau09b/Kau09b_3.png'>
+			<img src='/Downloads/Publications/Papers/2009/Kau09b/Kau09b_3_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Kau09b'></a>
+		<i>P. Kaufmann, S. Martin, M. Botsch, E. Grinspun, M. Gross</i><br/>
+		<b>Enrichment Textures for Detailed Cutting of Shells</b>		<br/>
+		Proceedings of ACM SIGGRAPH (New Orleans, USA, August 3-7, 2009), ACM Transactions on Graphics, vol. 28, no. 3, pp. 50:1-50:10 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2009/Kau09b/Kau09b.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2009/Kau09b - SIGGRAPH2009 - EnrichmentTextures.mov'>Video</a>]		[<a href='/Downloads/Publications/Papers/2009/Kau09b/Kau09b.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><b>Kau09</b><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2009/Kau09/Kau09_1.png'>
+			<img src='/Downloads/Publications/Papers/2009/Kau09/Kau09_1_thmb.png' height='40' border='0' alt=''/></a>
+		<a href='/Downloads/Publications/Papers/2009/Kau09/Kau09_2.png'>
+			<img src='/Downloads/Publications/Papers/2009/Kau09/Kau09_2_thmb.png' height='40' border='0' alt=''/></a>
+		<a href='/Downloads/Publications/Papers/2009/Kau09/Kau09_3.png'>
+			<img src='/Downloads/Publications/Papers/2009/Kau09/Kau09_3_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Kau09'></a>
+		<i>P. Kaufmann, S. Martin, M. Botsch, M. Gross</i><br/>
+		<b>Flexible Simulation of Deformable Models Using Discontinuous Galerkin FEM</b>		<br/>
+		Journal of Graphical Models, vol. 71, no. 4, 2009, Special Issue of ACM SIGGRAPH / Eurographics Symposium on Computer Animation 2008, pp. 153-167 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2009/Kau09/Kau09.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2009/Kau09 - GMOD - Flexible Simulation of DeformableModels Using DiscontinuousGalerkinFEM.mov'>Video</a>] [<a href='/Downloads/Publications/PaperVideos/2009/Kau09b - SIGGRAPH2009 - EnrichmentTextures.mov'>Video</a>]		[<a href='/Downloads/Publications/Papers/2009/Kau09/Kau09.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><h3><a name='2008'></a>2008</h3><div class='item'>
+<div class='paperCode'>
+<b>[</b><b>Kim08</b><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2008/Kim08/Kim08_1.jpg'>
+			<img src='/Downloads/Publications/Papers/2008/Kim08/Kim08_1_thmb.jpg' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Kim08'></a>
+		<i>T. Kim, N. Thuerey, D. James, M. Gross</i><br/>
+		<b>Wavelet Turbulence for Fluid Simulation</b>		<br/>
+		Proceedings of ACM SIGGRAPH (Los Angeles, USA, August 11-15, 2008), ACM Transactions on Graphics, vol. 27, no. 3, pp. 50.1-50.6 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2008/Kim08/Kim08.pdf'>PDF</a>]		[<a href='/Downloads/Publications/Papers/2008/Kim08/Kim08.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><b>Mar08</b><b>]</b>
+<img src='images/award.png' alt=''/ class='paperAward'></div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2008/Mar08/Mar08_1.png'>
+			<img src='/Downloads/Publications/Papers/2008/Mar08/Mar08_1_thmb.png' height='40' border='0' alt=''/></a>
+		<a href='/Downloads/Publications/Papers/2008/Mar08/Mar08_2.png'>
+			<img src='/Downloads/Publications/Papers/2008/Mar08/Mar08_2_thmb.png' height='40' border='0' alt=''/></a>
+		<a href='/Downloads/Publications/Papers/2008/Mar08/Mar08_3.png'>
+			<img src='/Downloads/Publications/Papers/2008/Mar08/Mar08_3_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Mar08'></a>
+		<i>S. Martin, P. Kaufmann, M. Botsch, M. Wicke, M. Gross</i><br/>
+		<b>Polyhedral Finite Elements Using Harmonic Basis Functions</b>		<br/>
+		Proceedings of Eurographics Symposium on Geometry Processing (Copenhagen, Denmark, July 2-4, 2008), Computer Graphics Forum, vol. 27, no. 5, 2008, pp. 1521-1529  <i>(Best Student Paper Award)</i>		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2008/Mar08/Mar08.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2008/Mar08 - SGP 2008.mov'>Video</a>]		[<a href='/Downloads/Publications/Papers/2008/Mar08/Mar08.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><b>Kau08</b><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2008/Kau08/Kau08_1.png'>
+			<img src='/Downloads/Publications/Papers/2008/Kau08/Kau08_1_thmb.png' height='40' border='0' alt=''/></a>
+		<a href='/Downloads/Publications/Papers/2008/Kau08/Kau08_2.png'>
+			<img src='/Downloads/Publications/Papers/2008/Kau08/Kau08_2_thmb.png' height='40' border='0' alt=''/></a>
+		<a href='/Downloads/Publications/Papers/2008/Kau08/Kau08_3.png'>
+			<img src='/Downloads/Publications/Papers/2008/Kau08/Kau08_3_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Kau08'></a>
+		<i>P. Kaufmann, S. Martin, M. Botsch, M. Gross</i><br/>
+		<b>Flexible Simulation of Deformable Models Using Discontinuous Galerkin FEM</b>		<br/>
+		Proceedings of the 2008 ACM SIGGRAPH/Eurographics Symposium on Computer Animation (Dublin, Ireland, July 7-9, 2008), pp. 105-115 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2008/Kau08/Kau08.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2008/Kau08 - Deformable Models Using DG FEM.mov'>Video</a>]		[<a href='/Downloads/Publications/Papers/2008/Kau08/Kau08.abstract'>Abstract</a>]
+</div>
+</div></div></ul>
+</div>
+
+				<!-- CONTENT ENDS HERE -->
+			</div>
+			<!-- end content -->
+		</div>
+	<!-- </div> Marcel removed this -->
+</div>
+<!-- footer -->
+<div class="container wrapperCloser">
+	<div class="grey"><br></div>
+	<div class="red"><br></div>
+	<div class="green"><br></div>
+	<div class="blue"><br></div>
+</div>
+<div class="container footer">
+		<div class='col-xl-6 col-lg-6 col-sm-6 col-xs-12 footerA'>&copy; CGL, ETH Zurich</div>
+	<!--<div class='col-xl-6 col-lg-6 col-sm-6 col-xs-12 footerB'>wwwgraph<img src='/images2014/at.png' alt='o'/>inf.ethz.ch</div>-->
+	</div>
+<!-- end footer -->
+<!--   end new code   -->
+
+
+<!-- old stuff
+end old stuff  -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/offcanvas.js"></script>
+</body>
+</html>

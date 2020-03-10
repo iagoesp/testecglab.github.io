@@ -1,0 +1,582 @@
+ 	
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'><html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en' lang='en'>	<head>
+		<title>CGL @ ETHZ - Animation</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	    <meta charset="UTF-8"/>
+	    <meta name="description" content=""/>
+	    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+	    <link href="/css/bootstrap.min.css" rel="stylesheet"/>
+	    <link href="/css/offcanvas.css" rel="stylesheet"/>
+	    <link href="/css/custom2014.css" rel="stylesheet"/>
+	</head>
+	
+<!-- Side menu page -->
+<body class="Animation">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-53220520-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<!--   new code   -->
+<div class="container headerBar">
+	<div class="col-lg-6 col-md-6 col-xs-6 headerBarA">
+		<h1><a href="/"><span>Computer Graphics Laboratory ETH Zurich</span></a>
+	</h1>
+	</div>
+	<div class="col-lg-6 col-md-6 col-xs-6 headerBarB">
+		<a href="http://www.ethz.ch"><span>ETH</span></a>
+	</div>
+</div>
+<div class="container navbar navbar-inverse menuBar" role="navigation">
+<!--  menu -->
+	<div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href='/aboutus/' class='list-group-item'>Contact</a></li><li><a href='/people/' class='list-group-item'>People</a></li><li><a href='/research/' class='list-group-item active'>Research</a></li><li><a href='/teaching/' class='list-group-item'>Teaching</a></li><li><a href='/publications/' class='list-group-item'>Publications</a></li><li><a href='/events/' class='list-group-item'>Events</a></li><li><a href='/industrypartners/' class='list-group-item'>Industry Partners</a></li><li><a href='/internal/' class='list-group-item'>Internal</a></li>                </ul>
+            </div>
+    </div>
+<!--  end menu -->
+</div>
+<div class="container contentWrapper">
+	<div class="row navTools">
+		<!-- breadcrumb -->	
+		<div class="col-lg-8 col-sm-8 col-xs-12 breadCrumb">
+			<!--<a href='http://www.ethz.ch'>ETH Zurich</a> &raquo; <a href='http://www.inf.ethz.ch/'>D-INFK</a> &raquo; <a href='http://ivc.ethz.ch/'>IVC</a> &raquo;--> <a href='/'>CGL</a>  &raquo; <a href='/research/'>Research</a> &raquo; <a href='/research/animation/'>Animation</a>		</div>
+		<!-- end breadcrumb -->	
+		<!-- search -->	
+		<div class="col-lg-4 col-sm-4 col-xs-12 searchEngine">
+			
+
+	<form method="get" action="/content/search.php" name="search">
+			<input type="text" size='17' name='q' value="Search" onclick="if(this.value=='Search'){this.value=''}" onblur="if(this.value==''){this.value='Search'}" />
+		</form>
+
+			</div>
+		<!-- end search -->	
+	</div>
+	<!-- content -->
+	<!-- <div class="row"> Marcel removed this -->
+		<div class="row row-offcanvas row-offcanvas-left">
+			<!--  side menu -->
+			<div class="col-xs-6 col-sm-3 sidebar-offcanvas noLeftPadding" id="sidebar" role="navigation">
+				<div class="list-group sideMenu">
+					<a href='/research/animation/' class='list-group-item active'>Animation</a><a href='/research/ar_games/' class='list-group-item'>AR and Games</a><a href='/research/data_analytics/' class='list-group-item'>AI and Analytics</a><a href='/research/digital_humans/' class='list-group-item'>Digital Humans</a><a href='/research/geometry_proc/' class='list-group-item'>Geometry Processing</a><a href='/research/image_video/' class='list-group-item'>Image and Video</a><a href='/research/materials/' class='list-group-item'>Materials</a><a href='/research/physics_simulation/' class='list-group-item'>Physics Simulation</a><a href='/research/rendering/' class='list-group-item'>Rendering</a><a href='/research/telepresence/' class='list-group-item'>Telepresence</a><a href='/research/visualization/' class='list-group-item'>Visualization</a><a href='/research/past_projects/' class='list-group-item'>Project Archive</a>				</div>
+			</div>
+			<!--  end side menu -->
+			<div class="col-xs-12 col-sm-9">
+				<p class="pull-left visible-xs">
+					<button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+				</p>
+				<h2 class="pageTitle">Animation</h2>
+				<!-- CONTENT STARTS HERE -->
+				
+<div class="singleProject">
+
+	<h3>Introduction</h3>
+		<p class="content" align="justify">
+			The technical limitations of the animation pipeline have had a strong influence on the style of animation that can be achieved in a professional production environment. Our research strives to bypass these technical barriers with new algorithms that expand the designer's creative toolbox in terms of depiction, movement, deformation, stylization, control and efficiency. We not only allow artists to create new types of content but also provide new ways of interaction that make some tasks more effective, accessible and time-saving.
+		</p>
+		
+	<h3>Topics</h3>
+		<p class="content"><b>Character Animation</b></p>
+		<p class="content" align="justify">
+			Character animation is a vital component of contemporary computer games and film productions. For animated movies in particular, a character's movements are critical to conveying personality and style. During the rigging stage, the range of meaningful deformations for a character is carefully designed by artists in terms of a low-dimensional set of intuitive control parameters. The character's movement is determined during the animation phase, when animators set values for the control parameters over time in order to bring the character to life and make it act.
+			Believable and compelling animation, however, requires careful consideration of the complex physical forces involved in movement in order to give weight and substance to an otherwise empty and weightless shape. We provide methods to design physically-plausible chracter movements, deformations and secondary-motions.
+		</p>
+		<img src="images/CharacterAnimation.png" class="img-responsive" align="center" alt=""/>
+		<br/>
+		
+		<p class="content"><b>Interactive tools</b></p>
+		<p class="content" align="justify">
+			Today, the prevailing interaction metaphor for animation and modeling interfaces is click-and-drag of individual controls. Unfortunately, this interaction metaphor does not accommodate some artistic principles and can be very counterintuitive to use. Our research seeks to provide artists with new ways of interaction that fit more precisely their need, as well as permit novice users to create satisfying content. In particular, we like to investigate sketch-based interfaces as a more natural way of editing 3D content, since it brings the user closer to traditional 2D sketching.
+		</p>
+		<img src="images/InteractiveTools.png" class="img-responsive" align="center" alt=""/>
+		<br/>
+		
+		<p class="content"><b>Stylization</b></p>
+		<p class="content" align="justify">
+			The content creation pipeline in 3D computer graphics has been well established for over 20 years. In particular, the workflow to texture and render animated characters has barely evolved. Our research on animation stylization aims at designing interactive and intuitive tools for artists to depart from the classic pipeline and expand the range of possible visual styles for 3D characters.
+		</p>
+		<img src="images/Stylization.jpg" class="img-responsive" align="center" alt=""/>
+		<br/>
+		
+		<p class="content"><b>Hand-drawn Animation</b></p>
+		<p class="content" align="justify">
+			We investigate a set of novel digital tools for 2D Animation addressing the shortcomings of current digital support, representations and algorithms. In contrast to previous work, where automation has often been the goal, we focus on building tools that keep the artist as a central agent. We target automation of the most tedious tasks where the need for artistic interpretation is minimal, and otherwise aim for computer-assisted solutions geared to provide a similar experience as with traditional workflows augmented with algorithmic computation. With this goal in mind, we address the problems of digital representation of drawings, vectorization, segmentation, inbetweening and temporal noise control.
+		</p>
+		<img src="images/HandDrawnAnimation.jpg" class="img-responsive" align="center" alt=""/>
+	
+	<h3>Publications</h3>
+	<ul><div class='pageContent publications'><h3><a name='2018'></a>2018</h3><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperCic18a.php'><b>Cic18a</b></a><b>]</b>
+<img src='images/award.png' alt=''/ class='paperAward'></div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2018/Cic18a/Cic18a_1.png'>
+			<img src='/Downloads/Publications/Papers/2018/Cic18a/Cic18a_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Cic18a'></a>
+		<i>R. Anderegg, L. Ciccone, R. W. Sumner</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperCic18a.php'><b>PuppetPhone: Puppeteering Virtual Characters Using a Smartphone</b></a>		<br/>
+		MIG '18 Proceedings of the 11th ACM SIGGRAPH Conference on Motion, Interaction and Games (Limassol, Cyprus, November 8-10, 2018), pp. 5:1--5:6  <i>(Best Short Paper Award)</i>		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2018/Cic18a/Cic18a.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2018/Cic18a.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2018/Cic18a/Cic18a.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2018/Cic18a/Cic18a.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperBor18a.php'><b>Bor18a</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2018/Bor18a/Bor18a_1.png'>
+			<img src='/Downloads/Publications/Papers/2018/Bor18a/Bor18a_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Bor18a'></a>
+		<i>D. Borer, M. Guay, R. W. Sumner</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperBor18a.php'><b>Keys-to-Sim: Transferring Hand-Crafted Key-framed Animations to Simulated Figures using Wide Band Stochastic Trajectory Optimization</b></a>		<br/>
+		To appear: Computer Graphics and Visual Computing 2018, The Eurographics Association (Swansea, Wales, September 13-14, 2018) 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2018/Bor18a/Bor18a.pdf'>PDF</a>][<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2018/Bor18a/Bor18a_supp.pdf'>PDF suppl.</a>] [<a href='/Downloads/Publications/PaperVideos/2018/Bor18a_supp.mp4'>Video</a>] [<a href='/Downloads/Publications/PaperVideos/2018/Bor18a.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2018/Bor18a/Bor18a.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2018/Bor18a/Bor18a.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperMil18a.php'><b>Mil18a</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2018/Mil18a/Mil18a_1.png'>
+			<img src='/Downloads/Publications/Papers/2018/Mil18a/Mil18a_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Mil18a'></a>
+		<i>A. Milliez, R. W. Sumner, M. Gross, B. Thomaszewski</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperMil18a.php'><b>HairControl: A Tracking Solution for Directable Hair Simulation</b></a>		<br/>
+		To appear: Proceedings of the 2018 ACM SIGGRAPH/Eurographics Symposium on Computer Animation (Paris, France, July 11-13, 2018) 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2018/Mil18a/Mil18a.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2018/Mil18a.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2018/Mil18a/Mil18a.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2018/Mil18a/Mil18a.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><h3><a name='2017'></a>2017</h3><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperZhe17a.php'><b>Zhe17a</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2017/Zhe17a/Zhe17a_1.png'>
+			<img src='/Downloads/Publications/Papers/2017/Zhe17a/Zhe17a_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Zhe17a'></a>
+		<i>M. Zheng, A. Milliez, M. Gross, R. W. Sumner</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperZhe17a.php'><b>Example-Based Brushes for Coherent Stylized Renderings</b></a>		<br/>
+		Expressive '17 Proceedings of the Joint Symposium on Computational Aesthetics, Sketch Based Interfaces and Modeling, and Non-Photorealistic Animation and Rendering (Los Angeles, CA, USA, July 29-30, 2017), pp. 3:1--3:10 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2017/Zhe17a/Zhe17a.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2017/Zhe17a.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2017/Zhe17a/Zhe17a.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2017/Zhe17a/Zhe17a.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperCic17a.php'><b>Cic17a</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2017/Cic17a/Cic17a_1.png'>
+			<img src='/Downloads/Publications/Papers/2017/Cic17a/Cic17a_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Cic17a'></a>
+		<i>L. Ciccone, M. Guay, M. Nitti, R. W. Sumner</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperCic17a.php'><b>Authoring Motion Cycles</b></a>		<br/>
+		Proceedings of the 2017 ACM SIGGRAPH/Eurographics Symposium on Computer Animation (Los Angeles, California, USA, July 28-30, 2017), pp. 8:1--8:9 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2017/Cic17a/Cic17a.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2017/Cic17a.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2017/Cic17a/Cic17a.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2017/Cic17a/Cic17a.abstract'>Abstract</a>]
+ [<a href='https://www.youtube.com/watch?v=H43hLTK2a90' target='_blank'>YouTube</a>]</div>
+</div></div><div class='pageContent publications'><h3><a name='2016'></a>2016</h3><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperMil16a.php'><b>Mil16a</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2016/Mil16a/Mil16a_1.png'>
+			<img src='/Downloads/Publications/Papers/2016/Mil16a/Mil16a_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Mil16a'></a>
+		<i>A. Milliez, M. Guay, M.-P. Cani, M. Gross, R. W. Sumner</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperMil16a.php'><b>Programmable Animation Texturing using Motion Stamps</b></a>		<br/>
+		Pacific Graphics 2016, Computer Graphics Forum (Okinawa, Japan, October 11-14, 2016), pp. 67--75 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2016/Mil16a/Mil16a.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2016/Mil16a.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2016/Mil16a/Mil16a.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2016/Mil16a/Mil16a.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperCic16a.php'><b>Cic16a</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2016/Cic16a/Cic16a_1.png'>
+			<img src='/Downloads/Publications/Papers/2016/Cic16a/Cic16a_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Cic16a'></a>
+		<i>L. Ciccone, M. Guay, R. Sumner</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperCic16a.php'><b>Flow Curves: an Intuitive Interface for Coherent Scene Deformation</b></a>		<br/>
+		Pacific Graphics 2016, Computer Graphics Forum (Okinawa, Japan, October 11-14, 2016), pp. 247--256 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2016/Cic16a/Cic16a.pdf'>PDF</a>][<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2016/Cic16a/Cic16a_supp.pdf'>PDF suppl.</a>] [<a href='/Downloads/Publications/PaperVideos/2016/Cic16a.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2016/Cic16a/Cic16a.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2016/Cic16a/Cic16a.abstract'>Abstract</a>]
+ [<a href='https://www.youtube.com/watch?v=VxbK4-rJ2og' target='_blank'>YouTube</a>]</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperKap16a.php'><b>Kap16a</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2016/Kap16a/Kap16a_1.png'>
+			<img src='/Downloads/Publications/Papers/2016/Kap16a/Kap16a_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Kap16a'></a>
+		<i>M. Kapadia, X. Xianghao, M. Nitti, M. Kallmann, S. Coros, R. W. Sumner, M. Gross</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperKap16a.php'><b>PRECISION: Precomputing Environment Semantics for Contact-rich Character Animation</b></a>		<br/>
+		i3D '16 Proceedings of the ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games (Redmond, WA, USA, February 27-28, 2016), pp. 29-37 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2016/Kap16a/Kap16a.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2016/Kap16a.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2016/Kap16a/Kap16a.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2016/Kap16a/Kap16a.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><h3><a name='2015'></a>2015</h3><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperZim15a.php'><b>Zim15a</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2015/Zim15a/Zim15a_1.png'>
+			<img src='/Downloads/Publications/Papers/2015/Zim15a/Zim15a_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Zim15a'></a>
+		<i>D. Zimmermann, S. Coros, Y. Ye, B. Sumner, M. Gross</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperZim15a.php'><b>Hierarchical Planning and Control for Complex Motor Tasks</b></a>		<br/>
+		SCA15 (Los Angeles, California, August 7-9, 2015), pp.   		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2015/Zim15a/Zim15a.pdf'>PDF</a>]		[<a href='/Downloads/Publications/Papers/2015/Zim15a/Zim15a.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2015/Zim15a/Zim15a.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperImh15a.php'><b>Imh15a</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2015/Imh15a/Imh15a_1.png'>
+			<img src='/Downloads/Publications/Papers/2015/Imh15a/Imh15a_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Imh15a'></a>
+		<i>N. Imhof, A. Milliez, F. Jenal, R. Bauer, M. Gross, R. W. Sumner</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperImh15a.php'><b>Fin Textures for Real-Time Painterly Aesthetics</b></a>		<br/>
+		MIG '15 Proceedings of the 8th ACM SIGGRAPH Conference on Motion in Games (Paris, France, November 16-18, 2015), pp. 227-235 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2015/Imh15a/Imh15a.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2015/Imh15a.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2015/Imh15a/Imh15a.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2015/Imh15a/Imh15a.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperHahn15a.php'><b>Hahn15a</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2015/Hahn15a/Hahn15a_1.png'>
+			<img src='/Downloads/Publications/Papers/2015/Hahn15a/Hahn15a_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Hahn15a'></a>
+		<i>F. Hahn, F. Mutzel, S. Coros, B. Thomaszewski, M. Nitti, M. Gross, R. Sumner</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperHahn15a.php'><b>Sketch Abstractions for Character Posing</b></a>		<br/>
+		Proceedings of the 2015 ACM SIGGRAPH/Eurographics Symposium on Computer Animation (Los Angeles, California, USA, August 7-9, 2015), pp. 185-191 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2015/Hahn15a/Hahn15a.pdf'>PDF</a>]		[<a href='/Downloads/Publications/Papers/2015/Hahn15a/Hahn15a.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2015/Hahn15a/Hahn15a.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><h3><a name='2014'></a>2014</h3><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperMil14a.php'><b>Mil14a</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2014/Mil14a/Mil14a_1.png'>
+			<img src='/Downloads/Publications/Papers/2014/Mil14a/Mil14a_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Mil14a'></a>
+		<i>A.Milliez, G. Noris, I. Baran, S. Coros, M.-P. Cani, M. Nitti, A. Marra, M. Gross, R. W. Sumner</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperMil14a.php'><b>Hierarchical Motion Brushes for Animation Instancing</b></a>		<br/>
+		Proceedings of the 12th International Symposium on Non-photorealistic Animation and Rendering (NPAR) (Vancouver, Canada, August 8-10, 2014), pp. 71--79 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2014/Mil14a/Mil14a.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2014/Mil14a.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2014/Mil14a/Mil14a.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2014/Mil14a/Mil14a.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperHahn14a.php'><b>Hahn14a</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2014/Hahn14a/Hahn14a_1.png'>
+			<img src='/Downloads/Publications/Papers/2014/Hahn14a/Hahn14a_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Hahn14a'></a>
+		<i>F. Hahn, B. Thomaszewski, S. Coros, R. Sumner, F. Cole, M. Meyer, T. DeRose, M. Gross</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperHahn14a.php'><b>Subspace Clothing Simulation Using Adaptive Bases</b></a>		<br/>
+		Proceedings of ACM SIGGRAPH (Vancouver, Canada, August 10-14, 2014), ACM Transactions on Graphics, vol. 34, no. 4, pp. 105:1--105:9 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2014/Hahn14a/Hahn14a.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2014/Hahn14a.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2014/Hahn14a/Hahn14a.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2014/Hahn14a/Hahn14a.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><h3><a name='2013'></a>2013</h3><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperBas13a.php'><b>Bas13a</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2013/Bas13a/Bas13a_1.png'>
+			<img src='/Downloads/Publications/Papers/2013/Bas13a/Bas13a_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Bas13a'></a>
+		<i>K. Bassett, I. Baran, J. Schmid, M. Gross, R. W. Sumner</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperBas13a.php'><b>Authoring and Animating Painterly Characters</b></a>		<br/>
+		ACM Transactions on Graphics, ACM, vol. 32, no. 5, 2013, pp. 156:1-156:12 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2013/Bas13a/Bas13a.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2013/Bas13a.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2013/Bas13a/Bas13a.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2013/Bas13a/Bas13a.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperLuk13.php'><b>Luk13</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2013/Luk13/Luk13_1.png'>
+			<img src='/Downloads/Publications/Papers/2013/Luk13/Luk13_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Luk13'></a>
+		<i>M. Lukac, J. Fiser, J.C. Bazin, O. Jamriska, A. Sorkine-Hornung, D. Sykora</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperLuk13.php'><b>Painting by Feature: Texture Boundaries for Example-based Image Creation</b></a>		<br/>
+		Proceedings of ACM SIGGRAPH (Anaheim, USA, July 21-25, 2013), ACM Transactions on Graphics, vol. 32, no. 4, pp. 146:1-146:12 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2013/Luk13/Luk13.pdf'>PDF</a>][<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2013/Luk13/Luk13_supp.pdf'>PDF suppl.</a>] [<a href='/Downloads/Publications/PaperVideos/2013/Luk13-Siggraph2013-PaintingByFeature.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2013/Luk13/Luk13.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2013/Luk13/Luk13.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperHahn13.php'><b>Hahn13</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2013/Hahn13/Hahn13_1.png'>
+			<img src='/Downloads/Publications/Papers/2013/Hahn13/Hahn13_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Hahn13'></a>
+		<i>F. Hahn, B. Thomaszewski, S. Coros, R. Sumner, M. Gross</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperHahn13.php'><b>Efficient simulation of secondary motion in rig-space</b></a>		<br/>
+		Proceedings of the 2013 ACM SIGGRAPH/Eurographics Symposium on Computer Animation (Anaheim, USA, July 19-21, 2013), pp. 165-171 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2013/Hahn13/Hahn13.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2013/Hahn13-SCA2013-EfficientSimulationOf SecondaryMotionIn RigSpace.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2013/Hahn13/Hahn13.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2013/Hahn13/Hahn13.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperNor13.php'><b>Nor13</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2013/Nor13/Nor13_1.png'>
+			<img src='/Downloads/Publications/Papers/2013/Nor13/Nor13_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Nor13'></a>
+		<i>G. Noris, A. Hornung, R. W. Sumner, M. Simons, M. Gross</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperNor13.php'><b>Topology-driven vectorization of clean line drawings</b></a>		<br/>
+		 ACM Transactions on Graphics, ACM, vol. 32, no. 1, 2013, pp. 4:1-4:11 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2013/Nor13/Nor13.pdf'>PDF</a>]		[<a href='/Downloads/Publications/Papers/2013/Nor13/Nor13.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2013/Nor13/Nor13.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><h3><a name='2012'></a>2012</h3><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperNor12.php'><b>Nor12</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2012/Nor12/Nor12_1.png'>
+			<img src='/Downloads/Publications/Papers/2012/Nor12/Nor12_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Nor12'></a>
+		<i>G. Noris, D. Sykora, A. Shamir, S. Coros, B. Whited, M. Simons, A. Hornung, R. W. Sumner, M. Gross</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperNor12.php'><b>Smart Scribbles for Sketch Segmentation</b></a>		<br/>
+		Computer Graphics Forum, Blackwell Publishing, vol. 31, no. 8, 2012, pp. 2516-2527 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2012/Nor12/Nor12.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2012/Nor12-ComputerGraphicsForum2012-SmartScribblesForSketchSegmentation_Results.mp4'>Video</a>] [<a href='/Downloads/Publications/PaperVideos/2012/Nor12-ComputerGraphicsForum2012-SmartScribblesForSketchSegmentation_Applications.avi'>Video</a>]		[<a href='/Downloads/Publications/Papers/2012/Nor12/Nor12.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2012/Nor12/Nor12.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperCor12.php'><b>Cor12</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2012/Cor12/Cor12_1.png'>
+			<img src='/Downloads/Publications/Papers/2012/Cor12/Cor12_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Cor12'></a>
+		<i>S. Coros, S. Martin, B. Thomaszewski, C. Schumacher, R. Sumner, M. Gross</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperCor12.php'><b>Deformable Objects Alive!</b></a>		<br/>
+		Proceedings of ACM SIGGRAPH (Los Angeles, USA, August 5-9, 2012), ACM Transactions on Graphics, vol. 31, no. 4, pp. 69:1-9 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2012/Cor12/Cor12.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2012/Cor12-Siggraph2012-DeformableObjectsAlive.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2012/Cor12/Cor12.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperHahn12.php'><b>Hahn12</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2012/Hahn12/Hahn12_1.png'>
+			<img src='/Downloads/Publications/Papers/2012/Hahn12/Hahn12_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Hahn12'></a>
+		<i>F. Hahn, S. Martin, B. Thomaszewski, R. Sumner, S. Coros, M. Gross</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperHahn12.php'><b>Rig-Space Physics</b></a>		<br/>
+		Proceedings of ACM SIGGRAPH (Los Angeles, USA, August 5-9, 2012), ACM Transactions on Graphics, vol. 31, no. 4, pp. 72:1-72:8 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2012/Hahn12/Hahn12.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2012/Hahn12-Siggraph2012-RigSpacePhysics.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2012/Hahn12/Hahn12.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2012/Hahn12/Hahn12.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><h3><a name='2011'></a>2011</h3><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperNor11.php'><b>Nor11</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2011/Nor11/Nor11_1.jpg'>
+			<img src='/Downloads/Publications/Papers/2011/Nor11/Nor11_1_thmb.jpg' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Nor11'></a>
+		<i>G. Noris, D. Sykora, S. Coros, B. Whited, M. Simmons, A. Hornung, M. Gross, R. Sumner</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperNor11.php'><b>Temporal Noise Control for Sketchy Animation</b></a>		<br/>
+		Proceedings of the 9th International Symposium on Non-Photorealistic Animation and Rendering (NPAR) (Vancouver, Canada, August 5-7, 2011), pp. 93-98 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2011/Nor11/Nor11.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2011/Nor11-NPAR2011.avi'>Video</a>]		[<a href='/Downloads/Publications/Papers/2011/Nor11/Nor11.bib'>BibTeX</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperBar11.php'><b>Bar11</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2011/Bar11/Bar11_1.png'>
+			<img src='/Downloads/Publications/Papers/2011/Bar11/Bar11_1_thmb.png' height='40' border='0' alt=''/></a>
+		<a href='/Downloads/Publications/Papers/2011/Bar11/Bar11_2.png'>
+			<img src='/Downloads/Publications/Papers/2011/Bar11/Bar11_2_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Bar11'></a>
+		<i>I. Baran, J. Schmid , T. Siegrist , M. Gross, R. Sumner</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperBar11.php'><b>Mixed-Order Compositing for 3D Paintings</b></a>		<br/>
+		Proceedings of ACM SIGGRAPH Asia (Hong Kong, China, December 12-15, 2011), ACM Transactions on Graphics, vol. 30, no. 6, pp. 132:1--132:6 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2011/Bar11/Bar11.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2011/Bar11-SIGGRAPHASIA2011-MixedOrderCompositingFor3DPaintings.mov'>Video</a>]		[<a href='/Downloads/Publications/Papers/2011/Bar11/Bar11.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2011/Bar11/Bar11.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperSchm11.php'><b>Schm11</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2011/Schm11/Schm11_1.png'>
+			<img src='/Downloads/Publications/Papers/2011/Schm11/Schm11_1_thmb.png' height='40' border='0' alt=''/></a>
+		<a href='/Downloads/Publications/Papers/2011/Schm11/Schm11_2.png'>
+			<img src='/Downloads/Publications/Papers/2011/Schm11/Schm11_2_thmb.png' height='40' border='0' alt=''/></a>
+		<a href='/Downloads/Publications/Papers/2011/Schm11/Schm11_3.png'>
+			<img src='/Downloads/Publications/Papers/2011/Schm11/Schm11_3_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Schm11'></a>
+		<i>J. Schmid, M. S. Senn, M. Gross, R. Sumner</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperSchm11.php'><b>OverCoat: An Implicit Canvas for 3D Painting</b></a>		<br/>
+		Proceedings of ACM SIGGRAPH (Vancouver, Canada, August 7-11, 2011), ACM Transactions on Graphics, vol. 30, no. 4, pp. 28:1-28:10 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2011/Schm11/Schm11.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2011/Schm11-SIGGRAPH2011-OverCoat.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2011/Schm11/Schm11.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2011/Schm11/Schm11.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><h3><a name='2010'></a>2010</h3><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperSchm10.php'><b>Schm10</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2010/Schm10/Schm10_1.png'>
+			<img src='/Downloads/Publications/Papers/2010/Schm10/Schm10_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Schm10'></a>
+		<i>J. Schmid, R. Sumner, H. Bowles, M. Gross</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperSchm10.php'><b>Programmable Motion Effects</b></a>		<br/>
+		Proceedings of ACM SIGGRAPH (Los Angeles, USA, July 25-29, 2010), ACM Transactions on Graphics, vol. 29, no. 3, pp. 57:1-57:9 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2010/Schm10/Schm10.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2010/Schm10 - SIGGRAPH2010 - motion effects.mov'>Video</a>]		[<a href='/Downloads/Publications/Papers/2010/Schm10/Schm10.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2010/Schm10/Schm10.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperWhi10.php'><b>Whi10</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2010/Whi10/Whi10_1.png'>
+			<img src='/Downloads/Publications/Papers/2010/Whi10/Whi10_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Whi10'></a>
+		<i>B. Whited, G. Noris, M. Simmons, R. Sumner, M. Gross, J. Rossignac</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperWhi10.php'><b>BetweenIT: An Interactive Tool for Tight Inbetweening</b></a>		<br/>
+		Proceedings of Eurographics (Norrk&ouml;ping, Sweden, May 3-7, 2010), Computer Graphics Forum, vol. 29, no. 2, pp. 605-614 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2010/Whi10/Whi10.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2010/Whi10 - Eurographics2010 - BetweenIT.mov'>Video</a>]		[<a href='/Downloads/Publications/Papers/2010/Whi10/Whi10.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2010/Whi10/Whi10.abstract'>Abstract</a>]
+</div>
+</div></div></ul>
+</div>
+
+				<!-- CONTENT ENDS HERE -->
+			</div>
+			<!-- end content -->
+		</div>
+	<!-- </div> Marcel removed this -->
+</div>
+<!-- footer -->
+<div class="container wrapperCloser">
+	<div class="grey"><br></div>
+	<div class="red"><br></div>
+	<div class="green"><br></div>
+	<div class="blue"><br></div>
+</div>
+<div class="container footer">
+		<div class='col-xl-6 col-lg-6 col-sm-6 col-xs-12 footerA'>&copy; CGL, ETH Zurich</div>
+	<!--<div class='col-xl-6 col-lg-6 col-sm-6 col-xs-12 footerB'>wwwgraph<img src='/images2014/at.png' alt='o'/>inf.ethz.ch</div>-->
+	</div>
+<!-- end footer -->
+<!--   end new code   -->
+
+
+<!-- old stuff
+end old stuff  -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/offcanvas.js"></script>
+</body>
+</html>

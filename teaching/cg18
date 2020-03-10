@@ -1,0 +1,260 @@
+ 	
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'><html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en' lang='en'>	<head>
+		<title>CGL @ ETHZ - Computer Graphics - AS 18</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	    <meta charset="UTF-8"/>
+	    <meta name="description" content=""/>
+	    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+	    <link href="/css/bootstrap.min.css" rel="stylesheet"/>
+	    <link href="/css/offcanvas.css" rel="stylesheet"/>
+	    <link href="/css/custom2014.css" rel="stylesheet"/>
+	</head>
+	
+<!-- Side menu page -->
+<body class="Computer Graphics - AS 18">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-53220520-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<!--   new code   -->
+<div class="container headerBar">
+	<div class="col-lg-6 col-md-6 col-xs-6 headerBarA">
+		<h1><a href="/"><span>Computer Graphics Laboratory ETH Zurich</span></a>
+	</h1>
+	</div>
+	<div class="col-lg-6 col-md-6 col-xs-6 headerBarB">
+		<a href="http://www.ethz.ch"><span>ETH</span></a>
+	</div>
+</div>
+<div class="container navbar navbar-inverse menuBar" role="navigation">
+<!--  menu -->
+	<div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href='/aboutus/' class='list-group-item'>Contact</a></li><li><a href='/people/' class='list-group-item'>People</a></li><li><a href='/research/' class='list-group-item'>Research</a></li><li><a href='/teaching/' class='list-group-item active'>Teaching</a></li><li><a href='/publications/' class='list-group-item'>Publications</a></li><li><a href='/events/' class='list-group-item'>Events</a></li><li><a href='/industrypartners/' class='list-group-item'>Industry Partners</a></li><li><a href='/internal/' class='list-group-item'>Internal</a></li>                </ul>
+            </div>
+    </div>
+<!--  end menu -->
+</div>
+<div class="container contentWrapper">
+	<div class="row navTools">
+		<!-- breadcrumb -->	
+		<div class="col-lg-8 col-sm-8 col-xs-12 breadCrumb">
+			<!--<a href='http://www.ethz.ch'>ETH Zurich</a> &raquo; <a href='http://www.inf.ethz.ch/'>D-INFK</a> &raquo; <a href='http://ivc.ethz.ch/'>IVC</a> &raquo;--> <a href='/'>CGL</a>  &raquo; <a href='/teaching/'>Teaching</a> &raquo; <a href='/teaching/cg18/'>Computer Graphics</a> &raquo; <a href='/teaching/cg18/home.php'>Home</a>		</div>
+		<!-- end breadcrumb -->	
+		<!-- search -->	
+		<div class="col-lg-4 col-sm-4 col-xs-12 searchEngine">
+			
+
+	<form method="get" action="/content/search.php" name="search">
+			<input type="text" size='17' name='q' value="Search" onclick="if(this.value=='Search'){this.value=''}" onblur="if(this.value==''){this.value='Search'}" />
+		</form>
+
+			</div>
+		<!-- end search -->	
+	</div>
+	<!-- content -->
+	<!-- <div class="row"> Marcel removed this -->
+		<div class="row row-offcanvas row-offcanvas-left">
+			<!--  side menu -->
+			<div class="col-xs-6 col-sm-3 sidebar-offcanvas noLeftPadding" id="sidebar" role="navigation">
+				<div class="list-group sideMenu">
+					<a href='/teaching/studentprojects/' class='list-group-item'>Student Projects</a><a href='/teaching/overview.php' class='list-group-item'>Courses Overview</a><a href='/teaching/gamelab19/' class='list-group-item'>Game Lab</a><a href='/teaching/mathfound19/' class='list-group-item'>Math.Foundations</a><a href='/teaching/seminarSS19/' class='list-group-item'>Seminar Adv. Methods</a><a href='/teaching/phdseminarSS19/' class='list-group-item'>PhD Seminar</a><a href='/teaching/cg18/' class='list-group-item active'>Computer Graphics</a><div class='list-group sideSubMenu'><a href='/teaching/cg18/home.php' class='list-group-item active'>Home</a><a href='/teaching/cg18/schedule.php' class='list-group-item'>Schedule</a><a href='/teaching/cg18/notes.php' class='list-group-item'>Course Material</a><a href='/teaching/cg18/nori.php' class='list-group-item'>Nori</a><a href='/teaching/cg18/googlegroup.php' class='list-group-item'>Google Group</a></div><a href='/teaching/former/' class='list-group-item'>Former Courses</a>				</div>
+			</div>
+			<!--  end side menu -->
+			<div class="col-xs-12 col-sm-9">
+				<p class="pull-left visible-xs">
+					<button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+				</p>
+				<h2 class="pageTitle">Computer Graphics - AS 18</h2>
+				<!-- CONTENT STARTS HERE -->
+				
+
+<div class="pageContent">
+	<div class="content">
+		<br/>
+		  <img alt='' src='images/introcg.png' border='0' class='img-responsive' />	</div>
+
+	<h3>News</h3>
+  <ul style="font-size:100%">
+<!--    <li><a href='competition/competition.php'>Rendering Competition 2018</a> results are now available.</li> -->
+	<li>Previous Computer Graphics exam: <a href="downloads/resources/exam2015.pdf">Exam 2015</a></li>
+	<li>First lecture and exercise session are on Friday 21.09. A lot of important information will be given, so please do not miss it.</li>
+<!-- 		<li>A selection of <b>previous exams</b> are available online for your preparation.
+			Please note that they may have a different scope from this year's class and
+			there is no guarantee that the exam will be in a similar form to them.<br/>
+			<li>
+			Previous <i>Computer Graphics</i> exams:
+			<a href="downloads/resources/cg_exam08.pdf">Final Exam 2008</a>,
+			<a href="downloads/resources/cg_midterm10.pdf">Midterm exam 2010</a>,
+			<a href="downloads/resources/cg_final10.pdf">Final exam 2010</a><br/>
+			</li>
+			<li>
+			Previous <i>Image Synthesis</i> exams:
+			<a href="downloads/resources/is_midterm_2013.pdf">Midterm exam 2013</a><br/>
+			</li>
+			<br/>
+			(only accessible within the ETH network)</li> -->
+<!--
+		<li><i>28.11. &mdash; Homework 6 is online.</i></li>
+		<li><i>24.11. &mdash; There will be an exciting guest lecture from <a href="http://www.esri.com/software/cityengine">Esri</a> this Friday on 28.11!</i></li>
+		<li><i>24.11. &mdash; IMPORTANT: Homework 5 is updated. Please use the new code template. Refer to the post in the Google group for details.</i></li>
+		<li><i>14.11. &mdash; Homework 5 is online. It is due in three weeks.</i></li>
+		<li><i>The code template for homework 4 is updated as of Oct 30, 00:23 am. Please <a href="downloads/exercises/brdf-js.zip">download it again</a> if you did before that time.</i></li>
+    <li><i>Homework 4 is online. We'll discuss it during the
+      coming Q&amp;A session. Bring your questions in order to participate!</i></li>
+		-->
+		<!--<li>The Final Project description is online.</li>
+		<li>The schedule was updated.</li>
+		<li>Assignment 4 is available.</li>--!>
+		<!--<li>Assignment 3 is available.</li>
+		<li>Assignment 2 is available.</li>
+		<li>We released an update of Nori together with the first assignment.</li>
+	<li>We released Nori the framework for the exercises. You can start reading the tutorial <a href="nori.php">here</a>.</li>-->
+	<!--<li>We have a new room for the exercise sessions. It is now in NO C 60.</li>-->
+	<!--<li>Please register to the <a href='https://groups.google.com/forum/#!forum/eth-cg15'>Google group</a> .</li>-->
+	<!--<li>First lecture and exercise session are on Friday 18.09. A lot of important information will be given, so don't miss it...</li>-->
+  </ul>
+
+	<h3>Overview</h3>
+	<p class="content">
+		This course covers fundamental concepts of modern computer graphics. Students
+		will learn about 3D object representations and the details of how to generate
+		photorealistic images from digital representations of 3D scenes. Starting with
+		an introduction to 3D shape modeling and representation, texture mapping and
+		ray-tracing, we will move on to acceleration structures, the physics of light
+		transport, appearance modeling and global illumination principles and
+		algorithms. We will end with an overview of modern image-based image synthesis
+		techniques, covering topics such as lightfields and depth-image based
+		rendering.
+	</p>
+
+	<h4>Objectives</h4>
+	<p class="content">
+		At the end of the course the students will be able to build a rendering system.
+		The students will study the basic principles of rendering and image synthesis.
+		In addition, the course is intended to stimulate the students' curiosity to
+		explore the field of computer graphics in subsequent courses or on their own.
+	</p>
+
+	<h4>Prerequisites</h4>
+	<p class="content">
+		Fundamentals of calculus and linear algebra, basic concepts of algorithms and
+		data structures, programming skills in C++, Visual Computing course
+		recommended.
+
+		The programming assignments will be in C++. This will not be taught in the class.
+	</p>
+
+<!-- 	<h4>Mailing List / Forum</h4>
+	<p class="content">
+		Mailing list (<a href="eth-cg15@googlegroups.com">eth-cg15@googlegroups.com</a>) is set up to facilitate the
+		communication between students. All the correspondences are available here for
+		later references. Send an email to TA to subscribe the mailing list. It is greatly encouraged to use
+		the mailing list, instead of private-mailing to TA, when asking
+		questions or initiating discussions so that the entire class can participate in
+		the discussions.
+	</p> -->
+
+
+	<h3>Topics</h3>
+	<p class="content">
+	The following topics will be covered through the semester: ray tracing,
+	acceleration data structures, radiometry, sampling, BSDFs, Monte Carlo
+	integration, advanced camera models, importance sampling, the rendering
+	equation, global illumination algorithms, participating media, sub-surface
+	scattering, denoising, procedural texturing & modeling, appearance modeling,
+	light fields, (depth) image based rendering, image based variance reduction,video based rendering.
+	</p>
+
+	<h3>Coursework</h3>
+	<h5>Programming exercise</h5>
+	<p class="content">
+		In the duration of the course you will implement a renderer, in a series of 4
+		homework exercises, that will allow you to create realistic images using
+		ray-tracing. The exercises will follow step-by-step the material presented in
+		class, and you will incrementally add functionality to your program and thus
+		more realism to your images. Once the basic functionality is implemented, you
+		are encouraged to extend your program to achieve some advanced effects and
+		experiment with interesting scene compositions, various light transport
+		phenomena, etc. Your exploration should result in a number of images
+		synthesized with your renderer, which you will submit to an in-class Rendering
+		Competition at the end of the semester.
+	</p>
+	<!--<h5>Theoretical exercise</h5>
+	<p class="content">
+		There will also be a few pencil and paper exercises to recap the important
+		material covered during the lecture.
+	</p>-->
+	<h5>Rendering Competition</h5>
+	<p class="content">
+		At the end of the semester there will be a rendering competition. The 3D
+		renderer you constructed in your homework assignments will be used to generate
+		realistic images. The best renderings will win cool prizes depending on
+		technical achievement and artistic quality.
+		<a href="https://graphics.ethz.ch/teaching/cg17/competition/competition.php">Here</a> are some results from last year's Rendering Competition.
+	</p>
+	<h5>General remarks and late policy</h5>
+	<p class="content">
+		Assignments will be handed out every one or two weeks and will be discussed in
+		the exercise session. Each exercise has a fixed due date at which all the
+		required material has to be handed in. The ONLY exceptions for late submission
+		are military service or illness, both of which require written proof.
+	</p>
+	<h5>Exam</h5>
+	<p class="content">
+    There will be a 2-hour written exam covering the topics from the excercises
+    and the ones discussed in class. No additional material is allowed during
+    the exam.
+	</p>
+
+
+	<h3>Administration</h3>
+
+	<div class="content">
+		<table class='genericTable'<tr>  <td class='content' valign='top'>    <strong>Number</strong>  </td>  <td class='content' valign='top'>    <a href='http://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=123176&semkez=2018W&ansicht=KATALOGDATEN&lang=en'>252-0543-01L</a>  </td></tr><tr>  <td class='content' valign='top'>    <strong>Lecturers</strong>  </td>  <td class='content' valign='top'>    <a href='http://www.graphics.ethz.ch/people/grossm/'>Prof. Dr. Markus Gross</a><br/><a href='http://drz.disneyresearch.com/~jnovak/'>Dr. Jan Nov&aacute;k</a><br/><a href='https://graphics.ethz.ch/~mpapas/'>Dr. Marios Papas</a>  </td></tr><tr>  <td class='content' valign='top'>    <strong>Assistants</strong>  </td>  <td class='content' valign='top'>    <a href='https://tom94.net'>Thomas M&uumlller</a><br/><a href='http://www.dominikborer.ch'>Dominik Borer</a><br/><a href='https://mkimish.github.io'>Xianyao Zhang</a>  </td></tr><tr>  <td class='content' valign='top'>    <strong>Course Location</strong>  </td>  <td class='content' valign='top'>    Monday 13&ndash;14, <a href='http://www.mapsearch.ethz.ch/map/mapSearchPre.do?farbcode=c010&amp;lang=de&amp;raumMap=56&amp;gebaeudeMap=ML&amp;geschossMap=F'>ML</a> <a href='http://www.rauminfo.ethz.ch/Rauminfo/grundrissplan.gif?gebaeude=ML&amp;geschoss=F&amp;raumNr=39&amp;lang=en'>F 39</a><br />Friday 10&ndash;12, <a href='http://www.mapsearch.ethz.ch/map/mapSearchPre.do?farbcode=c010&amp;lang=de&amp;raumMap=56&amp;gebaeudeMap=CAB&amp;geschossMap=G'>CAB</a> <a href='http://www.rauminfo.ethz.ch/Rauminfo/grundrissplan.gif?gebaeude=CAB&amp;geschoss=G&amp;raumNr=51&amp;lang=en'>G 51</a>  </td></tr><tr>  <td class='content' valign='top'>    <strong>Exercise Location</strong>  </td>  <td class='content' valign='top'>    Friday 13&ndash;15, <a href='http://www.mapsearch.ethz.ch/map/mapSearchPre.do?farbcode=c010&amp;lang=de&amp;raumMap=56&amp;gebaeudeMap=HG&amp;geschossMap=D'>HG</a> <a href='http://www.rauminfo.ethz.ch/Rauminfo/grundrissplan.gif?gebaeude=HG&amp;geschoss=D&amp;raumNr=1.1&amp;lang=en'>D 1.1</a>  </td></tr><tr>  <td class='content' valign='top'>    <strong>ECTS Credits</strong>  </td>  <td class='content' valign='top'>    6 credits  </td></tr><tr>  <td class='content' valign='top'>    <strong>Exam</strong>  </td>  <td class='content' valign='top'>    120 minutes, written exam (in English!)  </td></tr></table>	</div>
+</div>
+
+
+				<!-- CONTENT ENDS HERE -->
+			</div>
+			<!-- end content -->
+		</div>
+	<!-- </div> Marcel removed this -->
+</div>
+<!-- footer -->
+<div class="container wrapperCloser">
+	<div class="grey"><br></div>
+	<div class="red"><br></div>
+	<div class="green"><br></div>
+	<div class="blue"><br></div>
+</div>
+<div class="container footer">
+		<div class='col-xl-6 col-lg-6 col-sm-6 col-xs-12 footerA'>&copy; CGL, ETH Zurich</div>
+	<!--<div class='col-xl-6 col-lg-6 col-sm-6 col-xs-12 footerB'>wwwgraph<img src='/images2014/at.png' alt='o'/>inf.ethz.ch</div>-->
+	</div>
+<!-- end footer -->
+<!--   end new code   -->
+
+
+<!-- old stuff
+end old stuff  -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/offcanvas.js"></script>
+</body>
+</html>

@@ -1,0 +1,455 @@
+ 	
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'><html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en' lang='en'>	<head>
+		<title>CGL @ ETHZ - Telepresence</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	    <meta charset="UTF-8"/>
+	    <meta name="description" content=""/>
+	    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+	    <link href="/css/bootstrap.min.css" rel="stylesheet"/>
+	    <link href="/css/offcanvas.css" rel="stylesheet"/>
+	    <link href="/css/custom2014.css" rel="stylesheet"/>
+	</head>
+	
+<!-- Side menu page -->
+<body class="Telepresence">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-53220520-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<!--   new code   -->
+<div class="container headerBar">
+	<div class="col-lg-6 col-md-6 col-xs-6 headerBarA">
+		<h1><a href="/"><span>Computer Graphics Laboratory ETH Zurich</span></a>
+	</h1>
+	</div>
+	<div class="col-lg-6 col-md-6 col-xs-6 headerBarB">
+		<a href="http://www.ethz.ch"><span>ETH</span></a>
+	</div>
+</div>
+<div class="container navbar navbar-inverse menuBar" role="navigation">
+<!--  menu -->
+	<div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href='/aboutus/' class='list-group-item'>Contact</a></li><li><a href='/people/' class='list-group-item'>People</a></li><li><a href='/research/' class='list-group-item active'>Research</a></li><li><a href='/teaching/' class='list-group-item'>Teaching</a></li><li><a href='/publications/' class='list-group-item'>Publications</a></li><li><a href='/events/' class='list-group-item'>Events</a></li><li><a href='/industrypartners/' class='list-group-item'>Industry Partners</a></li><li><a href='/internal/' class='list-group-item'>Internal</a></li>                </ul>
+            </div>
+    </div>
+<!--  end menu -->
+</div>
+<div class="container contentWrapper">
+	<div class="row navTools">
+		<!-- breadcrumb -->	
+		<div class="col-lg-8 col-sm-8 col-xs-12 breadCrumb">
+			<!--<a href='http://www.ethz.ch'>ETH Zurich</a> &raquo; <a href='http://www.inf.ethz.ch/'>D-INFK</a> &raquo; <a href='http://ivc.ethz.ch/'>IVC</a> &raquo;--> <a href='/'>CGL</a>  &raquo; <a href='/research/'>Research</a> &raquo; <a href='/research/telepresence/'>Telepresence</a>		</div>
+		<!-- end breadcrumb -->	
+		<!-- search -->	
+		<div class="col-lg-4 col-sm-4 col-xs-12 searchEngine">
+			
+
+	<form method="get" action="/content/search.php" name="search">
+			<input type="text" size='17' name='q' value="Search" onclick="if(this.value=='Search'){this.value=''}" onblur="if(this.value==''){this.value='Search'}" />
+		</form>
+
+			</div>
+		<!-- end search -->	
+	</div>
+	<!-- content -->
+	<!-- <div class="row"> Marcel removed this -->
+		<div class="row row-offcanvas row-offcanvas-left">
+			<!--  side menu -->
+			<div class="col-xs-6 col-sm-3 sidebar-offcanvas noLeftPadding" id="sidebar" role="navigation">
+				<div class="list-group sideMenu">
+					<a href='/research/animation/' class='list-group-item'>Animation</a><a href='/research/ar_games/' class='list-group-item'>AR and Games</a><a href='/research/data_analytics/' class='list-group-item'>AI and Analytics</a><a href='/research/digital_humans/' class='list-group-item'>Digital Humans</a><a href='/research/geometry_proc/' class='list-group-item'>Geometry Processing</a><a href='/research/image_video/' class='list-group-item'>Image and Video</a><a href='/research/materials/' class='list-group-item'>Materials</a><a href='/research/physics_simulation/' class='list-group-item'>Physics Simulation</a><a href='/research/rendering/' class='list-group-item'>Rendering</a><a href='/research/telepresence/' class='list-group-item active'>Telepresence</a><a href='/research/visualization/' class='list-group-item'>Visualization</a><a href='/research/past_projects/' class='list-group-item'>Project Archive</a>				</div>
+			</div>
+			<!--  end side menu -->
+			<div class="col-xs-12 col-sm-9">
+				<p class="pull-left visible-xs">
+					<button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+				</p>
+				<h2 class="pageTitle">Telepresence</h2>
+				<!-- CONTENT STARTS HERE -->
+				
+<div class="singleProject">
+
+	<h3>Introduction</h3> <p class="content" align="justify">
+
+		Advanced communication and remote collaboration are key
+		requirements of our modern society. Yet, the notion of
+		presence over large distances is relatively little understood
+		from a scientific point of view, and there is a variety of
+		perceptual and technical research challenges that need to be
+		addressed to design truly convincing telepresence systems.
+		Existing practical solutions to remote communication and
+		telecollaboration focus on video conferencing, but are
+		significantly limited. Standard commercial video conferencing
+		systems rely on 2D displays and single video cameras to
+		acquire video streams of the collaborators. These systems do
+		not have the abilities to capture and render all the details
+		required for a seamless immersive experience.  To enrich the
+		expressiveness of human communication, we envision solutions
+		that would let us perceive our remote collaborators seamlessly
+		embedded into our own working environment through novel 3D
+		display systems, and acquisition systems that can capture not
+		only video streams, but also other types of information such
+		as 3D geometry. The ideal system is a sensory-rich environment
+		that provides a highly compelling experience that is the
+		epitome of presence including perceptually crucial cues such
+		as eye contact, mimicry, and gestures.  </p>
+		
+	<h3>Topics</h3>	
+		<p class="content"><b>Displays</b></p>
+		<p class="content" align="justify">
+
+		The figure illustrates an evolution of 3D
+        displays which have been designed and developed in the context
+        of the <a href="http://beingthere.ethz.ch/">BeingThere
+        Center</a>. The first protoype is a parallax barrier display
+        which is realized by stacking up LCD displays. While the 3D
+        effect on the display can be perceived without special
+        glasses, it is fully opaque. The second prototype is our first
+        transparent 3D display. It is based on a projective foil and
+        requires active shutter glasses. While a vivid 3D effect is
+        achieved with the active shutter glasses, they are impractical
+        due to their weight and size. With prototype 3, we improve
+        this transparent active stereoscopic display by replacing the
+        active shutter glasses with lightweight passive glasses. In
+        this case, the display, a glass panel, embeds a special
+        anisotropic film. Two projectors behind the display project
+        light with different polarization onto the transparent
+        display. Due to the anisotropic properties of the setup, the
+        displayed image appears vivid even in relatively bright light
+        conditions. In addition, immersion is enhanced by adding
+        motion parallax to the binocular cues: Eye-tracking is used to
+        adapt rendered content to the viewer position. Prototype 4 is
+        a lifesize version of Prototype 3. A bidirectional setup
+        consisting of two life-size displays is installed at ETH and
+        NTU.</p>
+		<p align="center">
+			<img src="images/3D_Displays.jpg" class="img-responsive" align="center" alt=""/>
+		<br/>
+
+		<p class="content"><b>Gaze Awareness</b></p>
+		<p class="content" align="justify">
+		Effective communication using current
+        video conferencing systems is severely hindered by the lack of
+        eye contact caused by the disparity between the locations of
+        the subject and the camera. While this problem has been
+        partially solved for high-end expensive video conferencing
+        systems, it has not been convincingly solved for
+        consumer-level setups.  The method is suitable for a variety
+        of scenarios such as mainstream home video conferencing, as it
+        uses inexpensive consumer hardware, achieves real-time
+        performance.
+		</p>
+		<p align="center">
+			<img src="images/Gaze_Awareness.jpg" class="img-responsive" align="center" alt=""/>
+		<br/>
+
+		<p class="content"><b>Acquisition</b></p>
+		<p class="content" align="justify">
+
+
+		Multiview reconstruction aims at computing the geometry of a
+		scene observed by a set of cameras. Accurate 3D reconstruction
+		of dynamic scenes is a key component in a large variety of
+		applications, ranging from special effects to telepresence and
+		medical imaging. In this topic we develop methods to robustly
+		and efficiently reconstruct dynamic scenes captured by a set
+		of cameras. Our aim is to achieve, in real-time,
+		spatio-temporal consistency by seamlessly fusing color and
+		geometric information into a coherent representation.</p>
+
+		<p align="center"> <img
+		src="images/Acquisition.png" class="img-responsive"
+		align="center" alt=""/> <br/>
+
+	<h3>Publications</h3>
+	<ul><div class='pageContent publications'><h3><a name='2016'></a>2016</h3><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperKus16a.php'><b>Kus16a</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2016/Kus16a/Kus16a_1.jpg'>
+			<img src='/Downloads/Publications/Papers/2016/Kus16a/Kus16a_1_thmb.jpg' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Kus16a'></a>
+		<i>C. Pluess (Kuster), N. Ranieri, J.C. Bazin, T. Martin, P.Y. Laffont, T. Popa, M. Gross</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperKus16a.php'><b>An Immersive Bidirectional System for Life-size 3D Communication</b></a>		<br/>
+		Proceedings of the 29th International Conference on Computer Animation and Social Agents (CASA) (Geneva, Switzerland, May 23-25, 2016), pp. 89-96 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2016/Kus16a/Kus16a.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2016/Kus16a.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2016/Kus16a/Kus16a.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2016/Kus16a/Kus16a.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><h3><a name='2014'></a>2014</h3><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperFuc14a.php'><b>Fuc14a</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2014/Fuc14a/Fuc14a_1.jpg'>
+			<img src='/Downloads/Publications/Papers/2014/Fuc14a/Fuc14a_1_thmb.jpg' height='40' border='0' alt=''/></a>
+		<a href='/Downloads/Publications/Papers/2014/Fuc14a/Fuc14a_2.jpg'>
+			<img src='/Downloads/Publications/Papers/2014/Fuc14a/Fuc14a_2_thmb.jpg' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Fuc14a'></a>
+		<i>H. Fuchs, A. State, J.C. Bazin</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperFuc14a.php'><b>Immersive 3D Telepresence</b></a>		<br/>
+		IEEE Computer, IEEE, vol. 47, no. 7, 2014, pp. 46-52 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2014/Fuc14a/Fuc14a.pdf'>PDF</a>]		[<a href='/Downloads/Publications/Papers/2014/Fuc14a/Fuc14a.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2014/Fuc14a/Fuc14a.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperFliu14a.php'><b>Fliu14a</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2014/Fliu14a/Fliu14a_1.png'>
+			<img src='/Downloads/Publications/Papers/2014/Fliu14a/Fliu14a_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Fliu14a'></a>
+		<i>F. Liu, T. Martin, S.-K. Yeung, M. Gross</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperFliu14a.php'><b>Efficient direct rendering of deforming surfaces via shared subdivision trees</b></a>		<br/>
+		Proceedings of Eurographics (Hongkong, China,, October 26-28, 2014), Computer Graphics Forum, vol.  , no. , pp. 132-140 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2014/Fliu14a/Fliu14a.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2014/Fliu14a.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2014/Fliu14a/Fliu14a.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2014/Fliu14a/Fliu14a.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperGig14a.php'><b>Gig14a</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2014/Gig14a/Gig14a_1.png'>
+			<img src='/Downloads/Publications/Papers/2014/Gig14a/Gig14a_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Gig14a'></a>
+		<i>D. Giger, J.C. Bazin, C. Kuster, T. Popa, M. Gross</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperGig14a.php'><b>Gaze Correction with a Single Webcam</b></a>		<br/>
+		Proceedings of IEEE ICME 2014 (Chengdu, China, July 14-18, 2014), pp. 1-6 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2014/Gig14a/Gig14a.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2014/Gig14a.wmv'>Video</a>]		[<a href='/Downloads/Publications/Papers/2014/Gig14a/Gig14a.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2014/Gig14a/Gig14a.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperDen14a.php'><b>Den14a</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2014/Den14a/Den14a_1.png'>
+			<img src='/Downloads/Publications/Papers/2014/Den14a/Den14a_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Den14a'></a>
+		<i>T. Deng, J.C. Bazin, T. Martin, C. Kuster, J. Cai, T. Popa, M. Gross</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperDen14a.php'><b>Registration of Multiple RGBD Cameras via Local Rigid Transformations</b></a>		<br/>
+		Proceedings of IEEE ICME 2014 (Chengdu, China, July 14-18, 2014), pp.   		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2014/Den14a/Den14a.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2014/Den14a.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2014/Den14a/Den14a.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2014/Den14a/Den14a.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperRan14b.php'><b>Ran14b</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2014/Ran14b/Ran14b_1.png'>
+			<img src='/Downloads/Publications/Papers/2014/Ran14b/Ran14b_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Ran14b'></a>
+		<i>N. Ranieri, H. Seifert, M. Gross</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperRan14b.php'><b>Transparent Stereoscopic Display and Application</b></a>		<br/>
+		Proceedings of SPIE 9011 (San Francisco, USA, February 3-6, 2014), pp. 90110P 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2014/Ran14b/Ran14b.pdf'>PDF</a>]		[<a href='/Downloads/Publications/Papers/2014/Ran14b/Ran14b.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2014/Ran14b/Ran14b.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperRan14a.php'><b>Ran14a</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2014/Ran14a/Ran14a_1.png'>
+			<img src='/Downloads/Publications/Papers/2014/Ran14a/Ran14a_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Ran14a'></a>
+		<i>N. Ranieri, M. Gross</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperRan14a.php'><b>Vision-based calibration of parallax barrier displays</b></a>		<br/>
+		Proceedings of SPIE 9011 (San Francisco, USA, February 3-6, 2014), pp. 90111D 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2014/Ran14a/Ran14a.pdf'>PDF</a>]		[<a href='/Downloads/Publications/Papers/2014/Ran14a/Ran14a.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2014/Ran14a/Ran14a.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperKus14a.php'><b>Kus14a</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2014/Kus14a/Kus14a_1.png'>
+			<img src='/Downloads/Publications/Papers/2014/Kus14a/Kus14a_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Kus14a'></a>
+		<i>C. Kuster, J.C. Bazin, T. Deng, C. Oztireli, T. Martin, T. Popa, M. Gross</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperKus14a.php'><b>Spatio-Temporal Geometry Fusion for Multiple Hybrid Cameras using Moving Least Squares Surfaces</b></a>		<br/>
+		Proceedings of Eurographics (Strasbourg, France, April 7-11, 2014), Computer Graphics Forum, vol. 33, no. 2, pp. 1-10 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2014/Kus14a/Kus14a.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2014/Kus14a.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2014/Kus14a/Kus14a.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2014/Kus14a/Kus14a.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><h3><a name='2013'></a>2013</h3><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperRan13b.php'><b>Ran13b</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2013/Ran13b/Ran13b_1.png'>
+			<img src='/Downloads/Publications/Papers/2013/Ran13b/Ran13b_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Ran13b'></a>
+		<i>N. Ranieri, S. Heinzle, P. Barnum, W. Matusik, M. Gross</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperRan13b.php'><b>Multi-planar plenoptic displays</b></a>		<br/>
+		Journal of the Society for Information Display, Blackwell Publishing Ltd, vol. 21, no. 10, 2013, pp. 451-459 		<br/>
+		Available files:
+		[<a href='/Downloads/Publications/Papers/2013/Ran13b/Ran13b.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2013/Ran13b/Ran13b.abstract'>Abstract</a>]
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2013/Ran13b/Ran13b_preprint.pdf'>PDF preprint</a>]</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperRan13.php'><b>Ran13</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2013/Ran13/Ran13_1.png'>
+			<img src='/Downloads/Publications/Papers/2013/Ran13/Ran13_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Ran13'></a>
+		<i>N. Ranieri, S. Heinzle, P. Barnum, W. Matusik, M. Gross</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperRan13.php'><b>Light-Field Approximation Using Basic Display Layer Primitives</b></a>		<br/>
+		SID Symposium Digest of Technical Papers 2013 (Vancouver, Canada, 19-24 May, 2013), pp. 408-411 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2013/Ran13/Ran13.pdf'>PDF</a>]		[<a href='/Downloads/Publications/Papers/2013/Ran13/Ran13.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2013/Ran13/Ran13.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><h3><a name='2012'></a>2012</h3><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperRan12.php'><b>Ran12</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2012/Ran12/Ran12_1.png'>
+			<img src='/Downloads/Publications/Papers/2012/Ran12/Ran12_1_thmb.png' height='40' border='0' alt=''/></a>
+		<a href='/Downloads/Publications/Papers/2012/Ran12/Ran12_2.png'>
+			<img src='/Downloads/Publications/Papers/2012/Ran12/Ran12_2_thmb.png' height='40' border='0' alt=''/></a>
+		<a href='/Downloads/Publications/Papers/2012/Ran12/Ran12_3.png'>
+			<img src='/Downloads/Publications/Papers/2012/Ran12/Ran12_3_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Ran12'></a>
+		<i>N. Ranieri, S. Heinzle, Q. Smithwick, D. Reetz, L. S. Smoot, W. Matusik, M. Gross</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperRan12.php'><b>Multi-Layered Automultiscopic Displays</b></a>		<br/>
+		Proceedings of Pacific Graphics 2012 (Hong Kong, 12-14 September, 2012), pp. 2135-2143 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2012/Ran12/Ran12.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2012/Ran12-Multi-LayeredAutomultiscopicDisplays.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2012/Ran12/Ran12.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2012/Ran12/Ran12.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperKus12.php'><b>Kus12</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2012/Kus12/Kus12_1.png'>
+			<img src='/Downloads/Publications/Papers/2012/Kus12/Kus12_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Kus12'></a>
+		<i>C. Kuster, T. Popa, J.C. Bazin, C. Gotsman, M. Gross</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperKus12.php'><b>Gaze Correction for Home Video Conferencing</b></a>		<br/>
+		Proceedings of ACM SIGGRAPH Asia (Singapore, November 28 - December 1, 2012), ACM Transactions on Graphics, vol. 31, no. 6, pp. 174:1-174:6 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2012/Kus12/Kus12.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2012/Kus12-SiggraphAsia2012-GazeCorrectionForHomeVideoConferencing.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2012/Kus12/Kus12.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2012/Kus12/Kus12.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperKus12b.php'><b>Kus12b</b></a><b>]</b>
+</div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2012/Kus12b/Kus12b_1.png'>
+			<img src='/Downloads/Publications/Papers/2012/Kus12b/Kus12b_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Kus12b'></a>
+		<i>C. Kuster, N. Ranieri, Agustina, H. Zimmer, J.C. Bazin, C. Sun, T. Popa, M. Gross</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperKus12b.php'><b>Towards Next Generation 3D Teleconferencing Systems</b></a>		<br/>
+		Proceedings of 3DTV-CON (Zurich, Switzerland, October 15-17, 2012), pp. 1-4 		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2012/Kus12b/Kus12b.pdf'>PDF</a>]		[<a href='/Downloads/Publications/Papers/2012/Kus12b/Kus12b.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2012/Kus12b/Kus12b.abstract'>Abstract</a>]
+</div>
+</div></div><div class='pageContent publications'><h3><a name='2011'></a>2011</h3><div class='item'>
+<div class='paperCode'>
+<b>[</b><a href='https://cgl.ethz.ch/publications/papers/paperKus11.php'><b>Kus11</b></a><b>]</b>
+<img src='images/award.png' alt=''/ class='paperAward'></div>
+<div class='paperImages'>
+		<a href='/Downloads/Publications/Papers/2011/Kus11/Kus11_1.png'>
+			<img src='/Downloads/Publications/Papers/2011/Kus11/Kus11_1_thmb.png' height='40' border='0' alt=''/></a>
+</div>
+<div class='paperDatas'>
+<a name='Kus11'></a>
+		<i>C. Kuster, T. Popa, C. Zach, C. Gotsman, M. Gross</i><br/>
+		<a href='https://cgl.ethz.ch/publications/papers/paperKus11.php'><b>FreeCam: A Hybrid Camera System for Interactive Free-Viewpoint Video</b></a>		<br/>
+		Proceedings of Vision, Modeling, and Visualization (VMV) (Berlin, Germany, October 4-6, 2011), pp. 17-24  <i>(2nd Place Best Paper Award)</i>		<br/>
+		Available files:
+[<a href='/disclaimer.php?dlurl=/Downloads/Publications/Papers/2011/Kus11/Kus11.pdf'>PDF</a>] [<a href='/Downloads/Publications/PaperVideos/2011/Kus11-VMV2011-FreeCam.mp4'>Video</a>]		[<a href='/Downloads/Publications/Papers/2011/Kus11/Kus11.bib'>BibTeX</a>]
+		[<a href='/Downloads/Publications/Papers/2011/Kus11/Kus11.abstract'>Abstract</a>]
+</div>
+</div></div></ul>
+</div>
+
+				<!-- CONTENT ENDS HERE -->
+			</div>
+			<!-- end content -->
+		</div>
+	<!-- </div> Marcel removed this -->
+</div>
+<!-- footer -->
+<div class="container wrapperCloser">
+	<div class="grey"><br></div>
+	<div class="red"><br></div>
+	<div class="green"><br></div>
+	<div class="blue"><br></div>
+</div>
+<div class="container footer">
+		<div class='col-xl-6 col-lg-6 col-sm-6 col-xs-12 footerA'>&copy; CGL, ETH Zurich</div>
+	<!--<div class='col-xl-6 col-lg-6 col-sm-6 col-xs-12 footerB'>wwwgraph<img src='/images2014/at.png' alt='o'/>inf.ethz.ch</div>-->
+	</div>
+<!-- end footer -->
+<!--   end new code   -->
+
+
+<!-- old stuff
+end old stuff  -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/offcanvas.js"></script>
+</body>
+</html>
